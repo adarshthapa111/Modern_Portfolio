@@ -19,6 +19,20 @@ const config: Config = {
         'ontserrat': ['Montserrat', 'ans-serif'],
         'great-vibes': ['Great Vibes', 'display'],
       },
+      // keyframes: {
+      //   scroll: {
+      //     '0%': { transform: 'translateX(0)' },
+      //     '100%': { transform: 'translateX(-100%)' },
+      //   },
+      //   scrollReverse: {
+      //     '0%': { transform: 'translateX(0)' },
+      //     '100%': { transform: 'translateX(20%)' },
+      //   },
+      // },
+      // animation: {
+      //   scroll: 'scroll 30s linear infinite',
+      //   scrollReverse: 'scrollReverse 30s linear infinite',
+      // },
     },
   },
   plugins: [],

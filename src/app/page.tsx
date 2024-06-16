@@ -1,207 +1,146 @@
 import Image from "next/image";
-
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+import GetInTouch from "./components/GetInTouch";
+import HorizentalScrolling from "./components/HorizentalScrolling"
 export default function Home() {
   return (
     <>
-      <div className="">
-        <div className="flex flex-col items-center justify-center min-h-screen bg-white">
-          <header className="w-full max-w-6xl mx-auto flex justify-between items-center py-4">
+      <div className="min-h-screen ">
+        <header className="w-full bg-white shadow-md">
+          <div className="max-w-6xl mx-auto flex justify-between items-center py-4 px-6">
             <div className="flex items-center space-x-4">
-              <div>
-                <h1 className="font-bold font-playfair text-4xl">
-                  Adarsh <span className="text-red-600">✓</span>
-                </h1>
-              </div>
+              <h1 className="font-bold font-playfair text-4xl">
+                Adarsh <span className="text-red-600">✓</span>
+              </h1>
               <nav className="hidden md:flex space-x-6 pl-10">
-                <a href="#" className="text-gray-600 hover:text-gray-900">
+                <a
+                  href="#"
+                  className="text-gray-600 hover:text-gray-900 transition duration-300"
+                >
                   Home
                 </a>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
+                <a
+                  href="#"
+                  className="text-gray-600 hover:text-gray-900 transition duration-300"
+                >
                   Project
                 </a>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
+                <a
+                  href="#"
+                  className="text-gray-600 hover:text-gray-900 transition duration-300"
+                >
                   About
                 </a>
               </nav>
             </div>
             <div className="flex items-center space-x-4">
               <div className="space-x-2">
-                <a href="#" className="text-gray-600 hover:text-gray-900">
+                <a
+                  href="#"
+                  className="text-gray-600 hover:text-gray-900 transition duration-300"
+                >
                   FR
                 </a>
                 <span>|</span>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
+                <a
+                  href="#"
+                  className="text-gray-600 hover:text-gray-900 transition duration-300"
+                >
                   EN
                 </a>
               </div>
-              <button className="bg-gray-900 rounded-md p-3 text-white font-medium ">
+              <button className="bg-gray-900 rounded-md py-2 px-4 text-white font-medium hover:bg-gray-700 transition duration-300">
                 Resume
               </button>
             </div>
-          </header>
-          <main className="flex flex-col items-center justify-center flex-grow min-h-screen">
-            <div className="text-center">
-              <span className="text-yellow-500">👋</span>
-              <p className="text-gray-700">My name is Adarsh Thapa</p>
+          </div>
+        </header>
+
+        <main className="flex flex-col items-center justify-center md:-mt-24 bg-white min-h-screen">
+          <div className="w-full max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between px-6">
+            <div className="text-center md:text-left md:w-1/2 space-y-4">
+              <p className="text-yellow-500 text-3xl text-center">👋</p>
+              <p className="text-gray-700 text-xl">
+                My name is Adarsh and I am recently completed BIT !
+              </p>
               <h1 className="text-7xl font-bold leading-none bg-gray-900  text-transparent bg-clip-text text-gray-800 font-playfair tracking-wide z-10">
-                Front-End React <br /> || Next{" "}
-                <span className="text-red-600">Developer</span>
-                <br />
-                <p className="text-4xl text-red-500">❖</p>
-                {/* <h2 className="text-6xl font-bold">red</h2> */}
+                Front-End React & Next Js{" "}
+                <span className="text-red-600">Developer ✦</span>
               </h1>
-              <p className="mt-4 text-gray-700">based in Kathmandu, Nepal.</p>
+              <p className="mt-4 text-gray-700 text-xl">
+                from Kathmandu, Nepal.
+              </p>
+              <div className="flex flex-col md:flex-row mt-8 space-y-4 md:space-y-0 md:space-x-4">
+                <button className="bg-red-500 text-sm hover:bg-red-700 text-white py-3 px-6 rounded-md  transition duration-300">
+                  You need a react developer
+                </button>
+                <button className="bg-gray-900 text-sm text-white py-3 px-6 rounded-md hover:bg-blue-400 transition duration-300">
+                  You need a next developer
+                </button>
+              </div>
+              <div className="flex space-x-6 pt-6">
+                <div>
+                  <img src="/img/github.png" alt="" className="h-10" />
+                </div>
+                <div>
+                  <img src="/img/linkedin.png" alt="" className="h-10" />
+                </div>
+                <div>
+                  <img src="/img/instagram.png" alt="" className="h-10" />
+                </div>
+              </div>
             </div>
-            <div>
-              <img
-                src="/img/"
-                alt="Bazil"
-                className="mt-8  rounded-full"
-                width={600}
-              />
+            <div className="mt-8 md:mt-0 md:w-1/2 flex justify-end">
+              <div className="bg-gray-200 rounded-full bg-gradient-to- relative">
+                <img
+                  src="/img/hancy.png"
+                  alt="Adarsh thapa"
+                  className="w-80 h-80 md:w-96 md:h-96 rounded-full object-cover"
+                />
+                
+              </div>
             </div>
-            <div className="flex mt-8 space-x-4">
-              <button>You need a Front-end Developer</button>
-              <button>|| UI/UX designer </button>
-            </div>
-          </main>
+          </div>
+        </main>
+        <div>
+          <HorizentalScrolling/>
+          <About />
+          <Projects />
+          <Skills />
+          <GetInTouch />
+        </div>
 
-          <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
-            <div className="max-w-6xl mx-auto container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 md:px-6">
-              <div className="flex items-center gap-4 bg-white p-4 rounded-lg shadow-md dark:bg-gray-950">
-                <div className="flex-shrink-0">
-                  <img
-                    src="/img/nextJs.jpg"
-                    width={40}
-                    height={40}
-                    alt="Next.js"
-                    className="w-10 h-10"
-                  />
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-lg font-bold">Next.js</h3>
-                  <p className="text-gray-500 dark:text-gray-400">
-                    The React framework for production.
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-center gap-4 bg-white p-4 rounded-lg shadow-md dark:bg-gray-950">
-                <div className="flex-shrink-0">
-                  <img
-                    src="/placeholder.svg"
-                    width={40}
-                    height={40}
-                    alt="React.js"
-                    className="w-10 h-10"
-                  />
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-lg font-bold">React.js</h3>
-                  <p className="text-gray-500 dark:text-gray-400">
-                    A JavaScript library for building user interfaces.
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-center gap-4 bg-white p-4 rounded-lg shadow-md dark:bg-gray-950">
-                <div className="flex-shrink-0">
-                  <img
-                    src="/placeholder.svg"
-                    width={40}
-                    height={40}
-                    alt="Tailwind CSS"
-                    className="w-10 h-10"
-                  />
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-lg font-bold">Tailwind CSS</h3>
-                  <p className="text-gray-500 dark:text-gray-400">
-                    A utility-first CSS framework for rapid UI development.
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-center gap-4 bg-white p-4 rounded-lg shadow-md dark:bg-gray-950">
-                <div className="flex-shrink-0">
-                  <img
-                    src="/placeholder.svg"
-                    width={40}
-                    height={40}
-                    alt="Supabase"
-                    className="w-10 h-10"
-                  />
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-lg font-bold">Supabase</h3>
-                  <p className="text-gray-500 dark:text-gray-400">
-                    An open-source Firebase alternative.
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-center gap-4 bg-white p-4 rounded-lg shadow-md dark:bg-gray-950">
-                <div className="flex-shrink-0">
-                  <img
-                    src="/placeholder.svg"
-                    width={40}
-                    height={40}
-                    alt="Firebase"
-                    className="w-10 h-10"
-                  />
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-lg font-bold">Firebase</h3>
-                  <p className="text-gray-500 dark:text-gray-400">
-                    A comprehensive app development platform.
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-center gap-4 bg-white p-4 rounded-lg shadow-md dark:bg-gray-950">
-                <div className="flex-shrink-0">
-                  <SigmaIcon className="w-10 h-10" />
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-lg font-bold">SVG</h3>
-                  <p className="text-gray-500 dark:text-gray-400">
-                    Scalable Vector Graphics for high-quality images.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <footer className="w-full max-w-6xl mx-auto flex justify-center items-center py-4 space-x-4">
-            <a href="#" className="text-gray-600 hover:text-gray-900">
-              audible
+        <footer className="w-full bg-white shadow-md">
+          <div className="max-w-6xl mx-auto flex justify-center items-center py-4 space-x-6">
+            <a
+              href="#"
+              className="text-gray-600 hover:text-gray-900 transition duration-300"
+            >
+              Home
             </a>
-            <a href="#" className="text-gray-600 hover:text-gray-900">
+            <a
+              href="#"
+              className="text-gray-600 hover:text-gray-900 transition duration-300"
+            >
               Behance
             </a>
-            <a href="#" className="text-gray-600 hover:text-gray-900">
+            <a
+              href="#"
+              className="text-gray-600 hover:text-gray-900 transition duration-300"
+            >
               Canva
             </a>
-            <a href="#" className="text-gray-600 hover:text-gray-900">
-              loom
+            <a
+              href="#"
+              className="text-gray-600 hover:text-gray-900 transition duration-300"
+            >
+              Loom
             </a>
-          </footer>
-        </div>
+          </div>
+        </footer>
       </div>
     </>
-  );
-}
-
-function SigmaIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M18 7V4H6l6 8-6 8h12v-3" />
-    </svg>
   );
 }
