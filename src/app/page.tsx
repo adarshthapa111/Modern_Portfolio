@@ -128,7 +128,6 @@ export default function Home() {
                   className="h-96 w-96 rounded-full object-cover"
                   width={800}
                   height={800}
-
                 />
               </div>
             </div>
@@ -142,35 +141,128 @@ export default function Home() {
           <GetInTouch />
         </div>
 
-        <footer className="w-full bg-white shadow-md">
-          <div className="max-w-6xl mx-auto flex justify-center items-center py-4 space-x-6">
-            <a
-              href="#"
-              className="text-gray-600 hover:text-gray-900 transition duration-300"
-            >
-              Home
-            </a>
-            <a
-              href="#"
-              className="text-gray-600 hover:text-gray-900 transition duration-300"
-            >
-              Behance
-            </a>
-            <a
-              href="#"
-              className="text-gray-600 hover:text-gray-900 transition duration-300"
-            >
-              Canva
-            </a>
-            <a
-              href="#"
-              className="text-gray-600 hover:text-gray-900 transition duration-300"
-            >
-              Loom
-            </a>
+        <footer className="bg-white text-gray-700 py-8 px-4 md:px-6 shadow-md">
+          <div className="container mx-auto max-w-6xl flex flex-col items-center gap-8 md:flex-row md:justify-between">
+            <div className="flex flex-col items-center md:items-start">
+              <h3 className="text-lg font-bold font-playfair">Adarsh Thapa</h3>
+              <p className="text-sm font-medium">Frontend Developer</p>
+              <p className="text-sm mt-2">
+                Passionate about building beautiful and functional web
+                applications.
+              </p>
+            </div>
+            <div className="flex items-center gap-4">
+              <Link
+                href="#"
+                className="hover:text-gray-500 transition-colors"
+                prefetch={false}
+              >
+                <LinkedinIcon className="w-5 h-5" />
+              </Link>
+              <Link
+                href="#"
+                className="hover:text-gray-500 transition-colors"
+                prefetch={false}
+              >
+                <TwitterIcon className="w-5 h-5" />
+              </Link>
+              <Link
+                href="#"
+                className="hover:text-gray-500 transition-colors"
+                prefetch={false}
+              >
+                <GitlabIcon className="w-5 h-5" />
+              </Link>
+              <Link
+                href="#"
+                className="hover:text-gray-500 transition-colors"
+                prefetch={false}
+              >
+                <MailIcon className="w-5 h-5" />
+              </Link>
+            </div>
           </div>
         </footer>
       </div>
     </>
+  );
+}
+
+function GitlabIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="m22 13.29-3.33-10a.42.42 0 0 0-.14-.18.38.38 0 0 0-.22-.11.39.39 0 0 0-.23.07.42.42 0 0 0-.14.18l-2.26 6.67H8.32L6.1 3.26a.42.42 0 0 0-.1-.18.38.38 0 0 0-.26-.08.39.39 0 0 0-.23.07.42.42 0 0 0-.14.18L2 13.29a.74.74 0 0 0 .27.83L12 21l9.69-6.88a.71.71 0 0 0 .31-.83Z" />
+    </svg>
+  );
+}
+
+function LinkedinIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+      <rect width="4" height="12" x="2" y="9" />
+      <circle cx="4" cy="4" r="2" />
+    </svg>
+  );
+}
+
+function MailIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <rect width="20" height="16" x="2" y="4" rx="2" />
+      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+    </svg>
+  );
+}
+
+function TwitterIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+    </svg>
   );
 }
