@@ -1,15 +1,16 @@
 import Link from "next/link";
 import Image from "next/image"
-export default function Projectg() {
+
+export default function Project() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32">
-      <h1 className="text-xl md:text-4xl xl:text-5xl text-center font-playfair font-bold p-1 max-w-6xl mx-auto text-gray-900">
-        Project Showcase
+      <h1 className="text-xl md:text-4xl xl:text-6xl text-center font-playfair font-bold max-w-6xl mx-auto text-gray-900">
+      <span className="text-red-500">◆</span> My <span className="text-red-500">Overall</span> Projects <span className="text-red-500">◆</span>
       </h1>
       <div className="container max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="group relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
           <div className="absolute inset-0 z-10" prefetch={false}>
-            <span className="sr-only">Project Showcase</span>
+            <span className="sr-only">My Overall Projects</span>
           </div>
           <Image
             src="/img/khanaaau.png"

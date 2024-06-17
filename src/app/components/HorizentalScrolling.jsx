@@ -12,7 +12,7 @@ export default function HorizentalScrolling() {
           <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
             <span className="sr-only">View HTML</span>
           </Link>
-          <div className="flex flex-col items-center justify-center gap-2 bg-white p-6 dark:bg-gray-950">
+          <div className="flex flex-col items-center justify-center gap-2 bg-white p-6">
             <Image
               src="/img/html.png"
               alt="HTML Logo"
@@ -30,7 +30,7 @@ export default function HorizentalScrolling() {
           <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
             <span className="sr-only">View CSS</span>
           </Link>
-          <div className="flex flex-col items-center justify-center gap-2 bg-white p-6 dark:bg-gray-950">
+          <div className="flex flex-col items-center justify-center gap-2 bg-white p-6">
             <Image
               src="/img/css.png"
               alt="CSS Logo"
@@ -84,7 +84,7 @@ export default function HorizentalScrolling() {
           <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
             <span className="sr-only">View React.js</span>
           </Link>
-          <div className="flex flex-col items-center justify-center gap-2 bg-white p-6 dark:bg-gray-950">
+          <div className="flex flex-col items-center justify-center gap-2 bg-white p-6 ">
             <Image
               src="/img/react.png"
               alt="React.js Logo"
@@ -102,7 +102,7 @@ export default function HorizentalScrolling() {
           <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
             <span className="sr-only">View Next.js</span>
           </Link>
-          <div className="flex flex-col items-center justify-center gap-2 bg-white p-6 dark:bg-gray-950">
+          <div className="flex flex-col items-center justify-center gap-2 bg-white p-6">
             <Image
               src="/img/next.jpeg"
               alt="Next.js Logo"
@@ -120,7 +120,7 @@ export default function HorizentalScrolling() {
           <Link href="https://firebase.google.com" className="absolute inset-0 z-10" prefetch={false}>
             <span className="sr-only">View Firebase</span>
           </Link>
-          <div className="flex flex-col items-center justify-center gap-2 bg-white p-6 dark:bg-gray-950">
+          <div className="flex flex-col items-center justify-center gap-2 bg-white p-6">
             <Image
               src="/img/firebase.png"
               alt="Firebase Logo"
@@ -138,7 +138,7 @@ export default function HorizentalScrolling() {
           <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
             <span className="sr-only">View Supabase</span>
           </Link>
-          <div className="flex flex-col items-center justify-center gap-2 bg-white p-6 dark:bg-gray-950">
+          <div className="flex flex-col items-center justify-center gap-2 bg-white p-6">
             <Image
               src="/img/supabase.png"
               alt="Supabase Logo"
