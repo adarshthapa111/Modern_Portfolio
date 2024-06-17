@@ -84,7 +84,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   prefetch={false}
                 >
-                  <img src="/img/github.png" alt="" className="h-10" />
+                  <Image src="/img/github.png" alt="" className="h-10" />
                 </Link>
                 <Link
                   href="https://www.linkedin.com/in/adarsh-thapa-8393552b0/"
@@ -92,7 +92,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   prefetch={false}
                 >
-                  <img src="/img/linkedin.png" alt="" className="h-10" />
+                  <Image src="/img/linkedin.png" alt="" className="h-10" />
                 </Link>
                 <Link
                   href="https://www.instagram.com/sawndesh_thapa/"
@@ -100,13 +100,13 @@ export default function Home() {
                   rel="noopener noreferrer"
                   prefetch={false}
                 >
-                  <img src="/img/instagram.png" alt="" className="h-10" />
+                  <Image src="/img/instagram.png" alt="" className="h-10" />
                 </Link>
               </div>
             </div>
             <div className="mt-8 md:mt-0 md:w-1/2 flex justify-end">
               <div className="bg-gray-200 rounded-full bg-gradient-to- relative">
-                <img
+                <Image
                   src="/img/hancy.png"
                   alt="Adarsh thapa"
                   className="w-80 h-80 md:w-96 md:h-96 rounded-full object-cover"
