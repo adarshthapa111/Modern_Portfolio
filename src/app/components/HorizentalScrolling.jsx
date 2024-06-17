@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image"
 
 export default function HorizentalScrolling() {
   return (
@@ -30,7 +31,7 @@ export default function HorizentalScrolling() {
             <span className="sr-only">View CSS</span>
           </Link>
           <div className="flex flex-col items-center justify-center gap-2 bg-white p-6 dark:bg-gray-950">
-            <img
+            <Image
               src="/img/css.png"
               alt="CSS Logo"
               width={48}
@@ -84,7 +85,7 @@ export default function HorizentalScrolling() {
             <span className="sr-only">View React.js</span>
           </Link>
           <div className="flex flex-col items-center justify-center gap-2 bg-white p-6 dark:bg-gray-950">
-            <img
+            <Image
               src="/img/react.png"
               alt="React.js Logo"
               width={48}
@@ -102,7 +103,7 @@ export default function HorizentalScrolling() {
             <span className="sr-only">View Next.js</span>
           </Link>
           <div className="flex flex-col items-center justify-center gap-2 bg-white p-6 dark:bg-gray-950">
-            <img
+            <Image
               src="/img/next.jpeg"
               alt="Next.js Logo"
               width={48}
@@ -120,7 +121,7 @@ export default function HorizentalScrolling() {
             <span className="sr-only">View Firebase</span>
           </Link>
           <div className="flex flex-col items-center justify-center gap-2 bg-white p-6 dark:bg-gray-950">
-            <img
+            <Image
               src="/img/firebase.png"
               alt="Firebase Logo"
               width={48}
@@ -138,7 +139,7 @@ export default function HorizentalScrolling() {
             <span className="sr-only">View Supabase</span>
           </Link>
           <div className="flex flex-col items-center justify-center gap-2 bg-white p-6 dark:bg-gray-950">
-            <img
+            <Image
               src="/img/supabase.png"
               alt="Supabase Logo"
               width={48}

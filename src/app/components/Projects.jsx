@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from "next/link";
 
 export default function Component() {
@@ -8,16 +9,16 @@ export default function Component() {
       </h1>
       <div className="container max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="group relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
-          <div className="absolute inset-0 z-10" prefetch={false}>
-            <span className="sr-only ">Project Showcase</span>
+          <div className="absolute inset-0 z-10">
+            <span className="sr-only">Project Showcase</span>
           </div>
-          <img
+          <Image
             src="/img/khanaaau.png"
             width={700}
             height={500}
-            controls
+            alt="Khana Aau"
             className="h-full w-full object-contain object-center"
-          ></img>
+          />
         </div>
         <div className="bg-white p-6 dark:bg-gray-950 rounded-lg shadow-lg">
           <div className="mb-2 flex items-center justify-between">
@@ -26,15 +27,15 @@ export default function Component() {
             </h3>
             <Link
               href="#"
-              className="text-sm bg-gray-900 py-2 px-6 font-medium text-gray-100 rounded-xl "
+              className="text-sm bg-gray-900 py-2 px-6 font-medium text-gray-100 rounded-xl"
               prefetch={false}
             >
               View
             </Link>
           </div>
           <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 text-justify">
-          <strong>
-             <span className="">Languages:</span> HTML, CSS, Js, React Js, Tailwind CSS, Firebase, Node
+            <strong>
+              <span className="">Languages:</span> HTML, CSS, Js, React Js, Tailwind CSS, Firebase, Node
               Js
             </strong>
             <br />
@@ -81,7 +82,7 @@ export default function Component() {
             </h3>
             <Link
               href="#"
-              className="text-sm bg-gray-900 py-2 px-6 font-medium text-gray-100 rounded-xl "
+              className="text-sm bg-gray-900 py-2 px-6 font-medium text-gray-100 rounded-xl"
               prefetch={false}
             >
               View
@@ -89,7 +90,7 @@ export default function Component() {
           </div>
           <p className="text-sm text-gray-700 dark:text-gray-400 mb-4 text-justify">
             <strong>
-             <span className="">Languages:</span> HTML, CSS, Js, Next Js, Tailwind CSS, Firebase, Supabase, Node
+              <span className="">Languages:</span> HTML, CSS, Js, Next Js, Tailwind CSS, Firebase, Supabase, Node
               Js
             </strong>
             <br />
@@ -127,17 +128,16 @@ export default function Component() {
           </div>
         </div>
         <div className="group relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
-          <div className="absolute inset-0 z-10" prefetch={false}>
+          <div className="absolute inset-0 z-10">
             <span className="sr-only">View project</span>
           </div>
-
-          <img
+          <Image
             src="/img/bookmyroom.png"
             width={700}
             height={500}
-            controls
+            alt="Book My Room"
             className="h-full w-full object-contain object-center"
-          ></img>
+          />
         </div>
       </div>
     </section>
@@ -183,4 +183,3 @@ function LinkIcon(props) {
     </svg>
   );
 }
-

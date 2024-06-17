@@ -22,7 +22,7 @@ export default function Home() {
                   href="#"
                   className="text-gray-600 hover:text-gray-900 transition duration-300"
                 >
-                 Home
+                  Home
                 </a>
                 <a
                   href="#"
@@ -39,9 +39,7 @@ export default function Home() {
               </nav>
             </div>
             <div className="flex items-center space-x-4">
-              <div className="space-x-2">
-  
-              </div>
+              <div className="space-x-2"></div>
               <button className="bg-gray-900 rounded-md py-2 px-4 text-white font-medium hover:bg-gray-700 transition duration-300">
                 <a
                   href="/File/CV.zip"
@@ -84,7 +82,13 @@ export default function Home() {
                   rel="noopener noreferrer"
                   prefetch={false}
                 >
-                  <Image src="/img/github.png" alt="" className="h-10" />
+                  <Image
+                    src="/img/github.png"
+                    alt=""
+                    className="h-10 w-10"
+                    width={40}
+                    height={40}
+                  />
                 </Link>
                 <Link
                   href="https://www.linkedin.com/in/adarsh-thapa-8393552b0/"
@@ -92,7 +96,13 @@ export default function Home() {
                   rel="noopener noreferrer"
                   prefetch={false}
                 >
-                  <Image src="/img/linkedin.png" alt="" className="h-10" />
+                  <Image
+                    src="/img/linkedin.png"
+                    alt=""
+                    className="h-10 w-10"
+                    width={40}
+                    height={40}
+                  />
                 </Link>
                 <Link
                   href="https://www.instagram.com/sawndesh_thapa/"
@@ -100,7 +110,13 @@ export default function Home() {
                   rel="noopener noreferrer"
                   prefetch={false}
                 >
-                  <Image src="/img/instagram.png" alt="" className="h-10" />
+                  <Image
+                    src="/img/instagram.png"
+                    alt=""
+                    className="h-10 w-10"
+                    width={40}
+                    height={40}
+                  />
                 </Link>
               </div>
             </div>
@@ -109,7 +125,10 @@ export default function Home() {
                 <Image
                   src="/img/hancy.png"
                   alt="Adarsh thapa"
-                  className="w-80 h-80 md:w-96 md:h-96 rounded-full object-cover"
+                  className="h-96 w-96 rounded-full object-cover"
+                  width={800}
+                  height={800}
+
                 />
               </div>
             </div>
@@ -155,4 +174,3 @@ export default function Home() {
     </>
   );
 }
-
