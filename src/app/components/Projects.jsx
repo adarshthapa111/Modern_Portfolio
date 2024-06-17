@@ -1,39 +1,29 @@
-// const Projects = () => {
-//   return (
-//     <div>
-//       <h1 className="text-xl md:text-4xl xl:text-6xl text-center font-playfair font-bold">My Projects</h1>
-
-//     </div>
-//   )
-// }
-
-// export default Projects
-
 import Link from "next/link";
-// import { Separator } from "@/components/ui/separator"
 
 export default function Component() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32">
-      <h1 className="text-xl md:text-4xl xl:text-6xl text-center font-playfair font-bold p-8">
-        My Projects
+    <section className="w-full py-12 md:py-24 lg:py-32 ">
+      <h1 className="text-xl md:text-4xl xl:text-5xl text-center font-playfair font-bold p-1 max-w-6xl mx-auto text-gray-900">
+        Project Showcase
       </h1>
       <div className="container max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="group relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
           <div className="absolute inset-0 z-10" prefetch={false}>
-            <span className="sr-only">View project</span>
+            <span className="sr-only ">Project Showcase</span>
           </div>
-          <video
-            src="/videos/restaurant-website.mov"
+          <img
+            src="/img/khanaaau.png"
             width={700}
             height={500}
             controls
-            className="h-full w-full object-cover object-center"
-          ></video>
+            className="h-full w-full object-contain object-center"
+          ></img>
         </div>
         <div className="bg-white p-6 dark:bg-gray-950 rounded-lg shadow-lg">
           <div className="mb-2 flex items-center justify-between">
-            <h3 className="text-2xl font-bold">Restaurant Website</h3>
+            <h3 className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent font-playfair">
+              Khana Aau
+            </h3>
             <Link
               href="#"
               className="text-sm bg-gray-900 py-2 px-6 font-medium text-gray-100 rounded-xl "
@@ -43,6 +33,12 @@ export default function Component() {
             </Link>
           </div>
           <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 text-justify">
+          <strong>
+             <span className="">Languages:</span> HTML, CSS, Js, React Js, Tailwind CSS, Firebase, Node
+              Js
+            </strong>
+            <br />
+            <br />
             The homepage greets visitors with a captivating hero section,
             featuring mouthwatering images of your signature dishes and a
             welcoming message that encapsulates the essence of your restaurant's
@@ -59,11 +55,20 @@ export default function Component() {
             guides customers through each step, from selecting dishes to
             specifying any dietary preferences or special instructions.
           </p>
-          <div className="mt-4 flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400">
-            <GithubIcon className="h-4 w-4" />
-            <span>GitHub</span>
-            <LinkIcon className="h-4 w-4" />
-            <span>Live Demo</span>
+          <div className="mt-4 flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400">
+            <Link
+              href="https://github.com/adarshthapa111/Restaurant_Management_Website/tree/main"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex space-x-2"
+            >
+              <GithubIcon className="h-4 w-4" />
+              <span className="">GitHub</span>
+            </Link>
+            <Link href="" className="flex space-x-2">
+              <LinkIcon className="h-4 w-4" />
+              <span>Live Demo</span>
+            </Link>
           </div>
         </div>
       </div>
@@ -71,7 +76,9 @@ export default function Component() {
       <div className="container max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
         <div className="bg-white p-6 dark:bg-gray-950 rounded-lg shadow-lg">
           <div className="mb-2 flex items-center justify-between">
-            <h3 className="text-2xl font-bold ">Hotel Room Rental System</h3>
+            <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500 font-playfair">
+              Book My Room
+            </h3>
             <Link
               href="#"
               className="text-sm bg-gray-900 py-2 px-6 font-medium text-gray-100 rounded-xl "
@@ -80,7 +87,13 @@ export default function Component() {
               View
             </Link>
           </div>
-          <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 text-justify">
+          <p className="text-sm text-gray-700 dark:text-gray-400 mb-4 text-justify">
+            <strong>
+             <span className="">Languages:</span> HTML, CSS, Js, Next Js, Tailwind CSS, Firebase, Supabase, Node
+              Js
+            </strong>
+            <br />
+            <br />
             The homepage greets visitors with a captivating hero section,
             featuring mouthwatering images of your signature dishes and a
             welcoming message that encapsulates the essence of your restaurant's
@@ -98,10 +111,19 @@ export default function Component() {
             specifying any dietary preferences or special instructions.
           </p>
           <div className="mt-4 flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400">
-            <GithubIcon className="h-4 w-4" />
-            <span>GitHub</span>
-            <LinkIcon className="h-4 w-4" />
-            <span>Live Demo</span>
+            <Link
+              href="https://github.com/adarshthapa111/Room-Rental-System"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex space-x-2"
+            >
+              <GithubIcon className="h-4 w-4" />
+              <span>GitHub</span>
+            </Link>
+            <Link href="" className="flex space-x-2">
+              <LinkIcon className="h-4 w-4" />
+              <span>Live Demo</span>
+            </Link>
           </div>
         </div>
         <div className="group relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
@@ -109,13 +131,13 @@ export default function Component() {
             <span className="sr-only">View project</span>
           </div>
 
-          <video
-            src="/videos/restaurant-website.mov"
+          <img
+            src="/img/bookmyroom.png"
             width={700}
             height={500}
             controls
-            className="h-full w-full object-cover object-center"
-          ></video>
+            className="h-full w-full object-contain object-center"
+          ></img>
         </div>
       </div>
     </section>
@@ -161,3 +183,4 @@ function LinkIcon(props) {
     </svg>
   );
 }
+

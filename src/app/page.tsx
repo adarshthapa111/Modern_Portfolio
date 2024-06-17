@@ -1,9 +1,12 @@
+"use client";
 import Image from "next/image";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import GetInTouch from "./components/GetInTouch";
-import HorizentalScrolling from "./components/HorizentalScrolling"
+import HorizentalScrolling from "./components/HorizentalScrolling";
+import Link from "next/link";
+
 export default function Home() {
   return (
     <>
@@ -19,7 +22,7 @@ export default function Home() {
                   href="#"
                   className="text-gray-600 hover:text-gray-900 transition duration-300"
                 >
-                  Home
+                 Home
                 </a>
                 <a
                   href="#"
@@ -37,22 +40,16 @@ export default function Home() {
             </div>
             <div className="flex items-center space-x-4">
               <div className="space-x-2">
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-gray-900 transition duration-300"
-                >
-                  FR
-                </a>
-                <span>|</span>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-gray-900 transition duration-300"
-                >
-                  EN
-                </a>
+  
               </div>
               <button className="bg-gray-900 rounded-md py-2 px-4 text-white font-medium hover:bg-gray-700 transition duration-300">
-                Resume
+                <a
+                  href="/File/CV.zip"
+                  download
+                  className="bg-gray-900 rounded-md py-2 px-4 text-white font-medium hover:bg-gray-700 transition duration-300"
+                >
+                  Resume
+                </a>
               </button>
             </div>
           </div>
@@ -81,15 +78,30 @@ export default function Home() {
                 </button>
               </div>
               <div className="flex space-x-6 pt-6">
-                <div>
+                <Link
+                  href="https://github.com/adarshthapa111"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  prefetch={false}
+                >
                   <img src="/img/github.png" alt="" className="h-10" />
-                </div>
-                <div>
+                </Link>
+                <Link
+                  href="https://www.linkedin.com/in/adarsh-thapa-8393552b0/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  prefetch={false}
+                >
                   <img src="/img/linkedin.png" alt="" className="h-10" />
-                </div>
-                <div>
+                </Link>
+                <Link
+                  href="https://www.instagram.com/sawndesh_thapa/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  prefetch={false}
+                >
                   <img src="/img/instagram.png" alt="" className="h-10" />
-                </div>
+                </Link>
               </div>
             </div>
             <div className="mt-8 md:mt-0 md:w-1/2 flex justify-end">
@@ -99,13 +111,12 @@ export default function Home() {
                   alt="Adarsh thapa"
                   className="w-80 h-80 md:w-96 md:h-96 rounded-full object-cover"
                 />
-                
               </div>
             </div>
           </div>
         </main>
         <div>
-          <HorizentalScrolling/>
+          <HorizentalScrolling />
           <About />
           <Projects />
           <Skills />
@@ -144,3 +155,4 @@ export default function Home() {
     </>
   );
 }
+
