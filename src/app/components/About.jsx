@@ -4,7 +4,6 @@ import { useState } from "react";
 const About = () => {
   const [activeSection, setActiveSection] = useState("skills");
 
-
   return (
     <div className="bg-gray-50 py-12 min-h-screen my-auto">
       <section className="section p-6 lg:flex max-w-6xl mx-auto bg-white shadow-lg rounded-lg">
@@ -13,7 +12,7 @@ const About = () => {
             About Adarsh
           </div>
           <p className="font-bold text-2xl font-playfair xl:text-4xl text-gray-800">
-            Completed my <span className="text-red-500">Undergraduate ►</span>
+            Completed my <span className="text-red-500">Undergraduate &#x25BA;</span>
           </p>
           <p className="text-sm text-justify text-gray-600 mt-2">
             I am Adarsh Thapa, a recent graduate from Herald College Kathmandu,
@@ -118,7 +117,7 @@ const About = () => {
                     </div>
                     <div className="right">
                       <p className="font-semibold text-gray-800">
-                        Redar's Public High School
+                        Reader&#39;s Public High School
                       </p>
                     </div>
                   </div>
