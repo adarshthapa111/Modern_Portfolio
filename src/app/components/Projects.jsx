@@ -1,23 +1,23 @@
-import Image from 'next/image';
 import Link from "next/link";
 
-export default function Component() {
+export default function Projectg() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 ">
+    <section className="w-full py-12 md:py-24 lg:py-32">
       <h1 className="text-xl md:text-4xl xl:text-5xl text-center font-playfair font-bold p-1 max-w-6xl mx-auto text-gray-900">
         Project Showcase
       </h1>
       <div className="container max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="group relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
-          <div className="absolute inset-0 z-10">
+          <div className="absolute inset-0 z-10" prefetch={false}>
             <span className="sr-only">Project Showcase</span>
           </div>
-          <Image
+          <img
             src="/img/khanaaau.png"
             width={700}
             height={500}
-            alt="Khana Aau"
+            controls
             className="h-full w-full object-contain object-center"
+            alt="Khana Aau Project Screenshot"
           />
         </div>
         <div className="bg-white p-6 dark:bg-gray-950 rounded-lg shadow-lg">
@@ -35,16 +35,16 @@ export default function Component() {
           </div>
           <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 text-justify">
             <strong>
-              <span className="">Languages:</span> HTML, CSS, Js, React Js, Tailwind CSS, Firebase, Node
-              Js
+              <span className="">Languages:</span> HTML, CSS, Js, React Js,
+              Tailwind CSS, Firebase, Node Js
             </strong>
             <br />
             <br />
             The homepage greets visitors with a captivating hero section,
             featuring mouthwatering images of your signature dishes and a
-            welcoming message that encapsulates the essence of your restaurant's
+            welcoming message that encapsulates the essence of your restaurant&apos;s
             dining experience. Visitors can easily navigate through the
-            website's intuitive menu, which provides detailed information about
+            website&apos;s intuitive menu, which provides detailed information about
             your culinary offerings, including appetizers, main courses,
             desserts, and beverages.
             <br />
@@ -64,9 +64,9 @@ export default function Component() {
               className="flex space-x-2"
             >
               <GithubIcon className="h-4 w-4" />
-              <span className="">GitHub</span>
+              <span>GitHub</span>
             </Link>
-            <Link href="" className="flex space-x-2">
+            <Link href="#" className="flex space-x-2">
               <LinkIcon className="h-4 w-4" />
               <span>Live Demo</span>
             </Link>
@@ -90,16 +90,16 @@ export default function Component() {
           </div>
           <p className="text-sm text-gray-700 dark:text-gray-400 mb-4 text-justify">
             <strong>
-              <span className="">Languages:</span> HTML, CSS, Js, Next Js, Tailwind CSS, Firebase, Supabase, Node
-              Js
+              <span className="">Languages:</span> HTML, CSS, Js, Next Js,
+              Tailwind CSS, Firebase, Supabase, Node Js
             </strong>
             <br />
             <br />
             The homepage greets visitors with a captivating hero section,
             featuring mouthwatering images of your signature dishes and a
-            welcoming message that encapsulates the essence of your restaurant's
+            welcoming message that encapsulates the essence of your restaurant&apos;s
             dining experience. Visitors can easily navigate through the
-            website's intuitive menu, which provides detailed information about
+            website&apos;s intuitive menu, which provides detailed information about
             your culinary offerings, including appetizers, main courses,
             desserts, and beverages.
             <br />
@@ -121,22 +121,23 @@ export default function Component() {
               <GithubIcon className="h-4 w-4" />
               <span>GitHub</span>
             </Link>
-            <Link href="" className="flex space-x-2">
+            <Link href="#" className="flex space-x-2">
               <LinkIcon className="h-4 w-4" />
               <span>Live Demo</span>
             </Link>
           </div>
         </div>
         <div className="group relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
-          <div className="absolute inset-0 z-10">
+          <div className="absolute inset-0 z-10" prefetch={false}>
             <span className="sr-only">View project</span>
           </div>
-          <Image
+          <img
             src="/img/bookmyroom.png"
             width={700}
             height={500}
-            alt="Book My Room"
+            controls
             className="h-full w-full object-contain object-center"
+            alt="Book My Room Project Screenshot"
           />
         </div>
       </div>

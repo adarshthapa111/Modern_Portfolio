@@ -13,7 +13,7 @@ export default function HorizentalScrolling() {
             <span className="sr-only">View HTML</span>
           </Link>
           <div className="flex flex-col items-center justify-center gap-2 bg-white p-6 dark:bg-gray-950">
-            <img
+            <Image
               src="/img/html.png"
               alt="HTML Logo"
               width={48}
@@ -49,7 +49,7 @@ export default function HorizentalScrolling() {
             <span className="sr-only">View Tailwind CSS</span>
           </Link>
           <div className="flex flex-col items-center justify-center gap-2 bg-white p-6 dark:bg-gray-950">
-            <img
+            <Image
               src="/img/tailwind.png"
               alt="Tailwind CSS Logo"
               width={48}
@@ -67,7 +67,7 @@ export default function HorizentalScrolling() {
             <span className="sr-only">View JavaScript</span>
           </Link>
           <div className="flex flex-col items-center justify-center gap-2 bg-white p-6 dark:bg-gray-950">
-            <img
+            <Image
               src="/img/Js.png"
               alt="JavaScript Logo"
               width={48}
