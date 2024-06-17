@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import Image from "next/image"
 export default function Projectg() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32">
@@ -11,7 +11,7 @@ export default function Projectg() {
           <div className="absolute inset-0 z-10" prefetch={false}>
             <span className="sr-only">Project Showcase</span>
           </div>
-          <img
+          <Image
             src="/img/khanaaau.png"
             width={700}
             height={500}
