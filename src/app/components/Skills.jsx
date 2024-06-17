@@ -111,7 +111,7 @@ const Skills = () => {
             <div className="text-center">
               <h2 className="font-bold text-lg m-4">UI/UX Design</h2>
               <p className="text-sm mb-4">
-                The seamless integration of UI and UX is vital in today's digital landscape. UI, the visual bridge between human and machine, plays a crucial role in crafting intuitive pathways that enable users to navigate and interact with products effortlessly.
+                The seamless integration of UI and UX is vital in today&apos;s digital landscape. UI, the visual bridge between human and machine, plays a crucial role in crafting intuitive pathways that enable users to navigate and interact with products effortlessly.
               </p>
               <button className="px-4 py-2 border-2 border-black bg-white rounded-sm text-sm shadow-md hover:bg-gray-100 font-bold transition-all">
                 Read more
@@ -139,7 +139,7 @@ const Skills = () => {
             <div className="text-center">
               <h2 className="font-bold text-lg m-4">App Development</h2>
               <p className="text-sm mb-4">
-              Leveraging the power of Firebase's comprehensive suite of tools, including its robust Realtime Database and Cloud Firestore, enables seamless data synchronization and offline persistence for dynamic applications. Alternatively, Supabase's open-source approach offers a PostgreSQL-based solution
+              Leveraging the power of Firebase&apos;s comprehensive suite of tools, including its robust Realtime Database and Cloud Firestore, enables seamless data synchronization and offline persistence for dynamic applications. Alternatively, Supabase&apos;s open-source approach offers a PostgreSQL-based solution
               </p>
               <button className="px-4 py-2 border-2 border-black bg-white rounded-sm text-sm shadow-md hover:bg-gray-100 font-bold transition-all">
                 Read more
