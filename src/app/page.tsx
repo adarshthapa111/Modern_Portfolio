@@ -56,9 +56,9 @@ export default function Home() {
         <main className="flex flex-col items-center justify-center md:-mt-24 bg-white min-h-screen">
           <div className="w-full max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between px-6">
             <div className="text-center md:text-left md:w-1/2 space-y-4">
-              <p className="text-yellow-500 text-3xl text-center">👋</p>
-              <p className="text-gray-700 text-xl">
-                My name is Adarsh and I am recently completed BIT !
+              {/* <span className="text-yellow-500 text-3xl text-center">👋</span> */}
+              <p className="text-gray-700 text-md">
+                👋 My name is Adarsh and I am recently completed BIT !
               </p>
               <h1 className="text-7xl font-bold leading-none bg-gray-900  text-transparent bg-clip-text text-gray-800 font-playfair tracking-wide z-10">
                 Front-End React & Next Js{" "}
@@ -134,11 +134,21 @@ export default function Home() {
           </div>
         </main>
         <div>
-          <HorizentalScrolling />
-          <About />
-          <Projects />
-          <Skills />
-          <GetInTouch />
+          <section id="tools">
+            <HorizentalScrolling />
+          </section>
+          <section id="About">
+            <About />
+          </section>
+          <section id="projects">
+            <Projects />
+          </section>
+          <section id="skills">
+            <Skills />
+          </section>
+          <section id="getintouch">
+            <GetInTouch />
+          </section>
         </div>
 
         <footer className="bg-white text-gray-700 py-8 px-4 md:px-6 shadow-md">
