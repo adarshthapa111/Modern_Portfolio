@@ -120,8 +120,16 @@ export default function Project() {
             specifying any dietary preferences or special instructions.
             <br />
             <br />
-            <span className="">Demo Account: sandesh@gmail.com</span> <br />
-            <span className="">Password: Sandesh@1234</span>
+            <div className="flex text-sm justify-between">
+              <div>
+                <span className="">Demo User: sandesh@gmail.com</span> <br />
+                <span className="">Password: Sandesh@1234</span>
+              </div>
+              <div className="text-end">
+                <span className="">Demo Admin: adarsh@gmail.com</span> <br />
+                <span className="">Password: adarsh1234</span>
+              </div>
+            </div>
           </div>
           <div className="mt-4 flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400">
             <Link
@@ -247,8 +255,12 @@ export default function Project() {
             specifying any dietary preferences or special instructions.
             <br />
             <br />
-            <span className="">Demo Account: sandesh@gmail.com</span> <br />
-            <span className="">Password: Sandesh@1234</span>
+            <div>
+              <div className="flex-col">
+                <span className="">Demo Account: sandesh@gmail.com</span> <br />
+                <span className="">Password: Sandesh@1234</span>
+              </div>
+            </div>
           </p>
           <div className="mt-4 flex items-center gap-2 text-sm text-gray-500 ">
             <Link
