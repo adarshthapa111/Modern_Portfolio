@@ -30,7 +30,6 @@ export default function Home() {
                   smooth={true}
                   duration={800}
                   spy={true}
-                  exact="true"
                   offset={-80}
                   className="cursor-pointer"
                 >
@@ -41,7 +40,6 @@ export default function Home() {
                   smooth={true}
                   duration={800}
                   spy={true}
-                  exact="true"
                   offset={-80}
                   className="cursor-pointer"
                 >
@@ -52,7 +50,6 @@ export default function Home() {
                   smooth={true}
                   duration={800}
                   spy={true}
-                  exact="true"
                   offset={-80}
                   className="cursor-pointer"
                 >
