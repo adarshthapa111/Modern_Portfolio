@@ -6,6 +6,7 @@ import Skills from "./components/Skills";
 import GetInTouch from "./components/GetInTouch";
 import HorizentalScrolling from "./components/HorizentalScrolling";
 import Link from "next/link";
+import { Link as ScrollLink } from "react-scroll";
 
 export default function Home() {
   return (
@@ -17,25 +18,46 @@ export default function Home() {
               <h1 className="font-bold font-playfair text-4xl">
                 Adarsh <span className="text-red-600">✓</span>
               </h1>
-              <nav className="hidden md:flex space-x-6 pl-10">
+              <nav className="hidden md:flex space-x-6 pl-10 items-center">
                 <a
-                  href="#"
-                  className="text-gray-600 hover:text-gray-900 transition duration-300"
+                  href="#home"
+                  className="hover:text-gray-900 transition duration-300 bg-black p-2 text-sm rounded-lg text-gray-100"
                 >
                   Home
                 </a>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-gray-900 transition duration-300"
-                >
-                  Project
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-gray-900 transition duration-300"
+                <ScrollLink
+                  to="about"
+                  smooth={true}
+                  duration={800}
+                  spy={true}
+                  exact="true"
+                  offset={-80}
+                  className="cursor-pointer"
                 >
                   About
-                </a>
+                </ScrollLink>
+                <ScrollLink
+                  to="projects"
+                  smooth={true}
+                  duration={800}
+                  spy={true}
+                  exact="true"
+                  offset={-80}
+                  className="cursor-pointer"
+                >
+                  Projects
+                </ScrollLink>
+                <ScrollLink
+                  to="skills"
+                  smooth={true}
+                  duration={800}
+                  spy={true}
+                  exact="true"
+                  offset={-80}
+                  className="cursor-pointer"
+                >
+                  Skills
+                </ScrollLink>
               </nav>
             </div>
             <div className="flex items-center space-x-4">
@@ -53,7 +75,10 @@ export default function Home() {
           </div>
         </header>
 
-        <main className="flex flex-col items-center justify-center md:-mt-24 bg-white min-h-screen">
+        <main
+          className="flex flex-col items-center justify-center md:-mt-24 bg-white min-h-screen"
+          id="home"
+        >
           <div className="w-full max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between px-6">
             <div className="text-center md:text-left md:w-1/2 space-y-4">
               {/* <span className="text-yellow-500 text-3xl text-center">👋</span> */}
@@ -137,7 +162,7 @@ export default function Home() {
           <section id="tools">
             <HorizentalScrolling />
           </section>
-          <section id="About">
+          <section id="about">
             <About />
           </section>
           <section id="projects">

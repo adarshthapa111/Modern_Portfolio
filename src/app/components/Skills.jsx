@@ -92,7 +92,7 @@ import Image from "next/image"
 
 const Skills = () => {
   return (
-    <div className="bg-gray-100 py-10">
+    <div className="bg-gray-100 py-10 min-h-screen">
       <section className="max-w-6xl mx-auto p-4">
         <div className="text-center mb-10">
           <h1 className="font-semibold text-red-500 text-lg mb-4 font-playfair">
