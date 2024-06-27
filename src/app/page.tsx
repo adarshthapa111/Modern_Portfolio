@@ -93,7 +93,7 @@ export default function Home() {
                 <button className="bg-red-500 text-sm hover:bg-red-700 text-white py-3 px-6 rounded-md  transition duration-300">
                   You need a react developer
                 </button>
-                <button className="bg-gray-900 text-sm text-white py-3 px-6 rounded-md hover:bg-blue-400 transition duration-300">
+                <button className="bg-gray-900 text-sm text-white py-3 px-6 rounded-md hover:bg-gray-700 transition duration-300">
                   You need a next developer
                 </button>
               </div>
@@ -143,14 +143,15 @@ export default function Home() {
               </div>
             </div>
             <div className="mt-8 md:mt-0 md:w-1/2 flex justify-end">
-              <div className="bg-gray-200 rounded-full bg-gradient-to- relative">
+              <div className="relative h-96 w-96 rounded-full overflow-hidden">
                 <Image
-                  src="/img/hancy.png"
-                  alt="Adarsh thapa"
-                  className="h-96 w-96 rounded-full object-cover"
+                  src="/img/bg.png"
+                  alt="Adarsh Thapa"
+                  className="h-full w-full object-cover shadow-md rotate-2"
                   width={800}
                   height={800}
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               </div>
             </div>
           </div>
