@@ -151,7 +151,7 @@ export default function Home() {
                   width={800}
                   height={800}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent custom-shape"></div>
               </div>
             </div>
           </div>
