@@ -43,64 +43,28 @@ export default function Project() {
             </Link>
           </div>
           <div className="text-sm text-gray-500 dark:text-gray-400 text-justify">
-            <div className="flex space-x-6 items-center">
-              <Image
-                src="/img/language.png"
-                alt=""
-                className="h-6 w-6"
-                height={20}
-                width={20}
-              />
-              <span className="text-gray-900 text-xl">▶︎</span>
-              <Image
-                src="/img/html.png"
-                alt=""
-                className="h-6 w-6"
-                height={20}
-                width={20}
-              />
-              <Image
-                src="/img/css.png"
-                alt=""
-                className="h-6 w-6"
-                height={20}
-                width={20}
-              />
-              <Image
-                src="/img/Js.png"
-                alt=""
-                className="h-6 w-6"
-                height={20}
-                width={20}
-              />
-              <Image
-                src="/img/tailwind.png"
-                alt=""
-                className="h-6 w-6"
-                height={20}
-                width={20}
-              />
-              <Image
-                src="/img/react.png"
-                alt=""
-                className="h-6 w-6"
-                height={20}
-                width={20}
-              />
-              <Image
-                src="/img/firebase.png"
-                alt=""
-                className="h-6 w-6"
-                height={20}
-                width={20}
-              />
-              <Image
-                src="/img/nodejs.png"
-                alt=""
-                className="h-6 w-6"
-                height={20}
-                width={20}
-              />
+            <div className="flex flex-wrap gap-2 mb-4">
+              <span className="py-1 px-3 bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-full text-xs font-medium">
+                HTML
+              </span>
+              <span className="py-1 px-3 bg-gradient-to-r from-green-500 to-green-700 text-white rounded-full text-xs font-medium">
+                CSS
+              </span>
+              <span className="py-1 px-3 bg-gradient-to-r from-yellow-500 to-yellow-700 text-white rounded-full text-xs font-medium">
+                JavaScript
+              </span>
+              <span className="py-1 px-3 bg-gradient-to-r from-teal-500 to-teal-700 text-white rounded-full text-xs font-medium">
+                Tailwind CSS
+              </span>
+              <span className="py-1 px-3 bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-full text-xs font-medium">
+                React
+              </span>
+              <span className="py-1 px-3 bg-gradient-to-r from-orange-500 to-orange-700 text-white rounded-full text-xs font-medium">
+                Firebase
+              </span>
+              <span className="py-1 px-3 bg-gradient-to-r from-green-600 to-green-800 text-white rounded-full text-xs font-medium">
+                Node.js
+              </span>
             </div>
             <br />
             The homepage greets visitors with a captivating hero section,
@@ -157,12 +121,12 @@ export default function Project() {
       <div className="container max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
         <div className="bg-white p-6 rounded-lg shadow-lg">
           <div className="mb-2 flex items-center justify-between">
-            <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500 font-playfair">
-              Book My Room
+            <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-gray-500 to-slate-500 font-playfair">
+              Hamro Furniture
             </h3>
             <Link
               href="https://showmeroom.vercel.app/"
-              className="text-sm hover:bg-gradient-to-r from-blue-500 to-purple-500 py-2 px-6 font-medium text-gray-800 hover:text-gray-100 rounded-xl"
+              className="text-sm hover:bg-gradient-to-r from-gray-500 to-slate-500 py-2 px-6 font-medium text-gray-800 hover:text-gray-100 rounded-xl"
               prefetch={false}
               target="_blank"
               rel="noopener noreferrer"
@@ -171,71 +135,35 @@ export default function Project() {
             </Link>
           </div>
           <p className="text-sm text-gray-700 dark:text-gray-400 mb-4 text-justify">
-            <div className="flex space-x-6 items-center">
-              <Image
-                src="/img/language.png"
-                alt=""
-                className="h-6 w-6"
-                height={20}
-                width={20}
-              />
-              <span className="text-gray-900 text-xl">▶︎</span>
-              <Image
-                src="/img/html.png"
-                alt=""
-                className="h-6 w-6"
-                height={20}
-                width={20}
-              />
-              <Image
-                src="/img/css.png"
-                alt=""
-                className="h-6 w-6"
-                height={20}
-                width={20}
-              />
-              <Image
-                src="/img/Js.png"
-                alt=""
-                className="h-6 w-6"
-                height={20}
-                width={20}
-              />
-              <Image
-                src="/img/tailwind.png"
-                alt=""
-                className="h-6 w-6"
-                height={20}
-                width={20}
-              />
-              <Image
-                src="/img/next.jpeg"
-                alt=""
-                className="h-6 w-6 rounded-full"
-                height={20}
-                width={20}
-              />
-              <img
-                src="/img/firebase.png"
-                alt=""
-                className="h-6 w-6"
-                height={20}
-                width={20}
-              />
-              <img
-                src="/img/supabase.png"
-                alt=""
-                className="h-6 w-6"
-                height={20}
-                width={20}
-              />
-              <img
-                src="/img/nodejs.png"
-                alt=""
-                className="h-6 w-6"
-                height={20}
-                width={20}
-              />
+            <div className="flex flex-wrap gap-2 mb-4">
+              <span className="py-1 px-3 bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-full text-xs font-medium">
+                HTML
+              </span>
+              <span className="py-1 px-3 bg-gradient-to-r from-green-500 to-green-700 text-white rounded-full text-xs font-medium">
+                CSS
+              </span>
+              <span className="py-1 px-3 bg-gradient-to-r from-yellow-500 to-yellow-700 text-white rounded-full text-xs font-medium">
+                JavaScript
+              </span>
+              <span className="py-1 px-3 bg-gradient-to-r from-teal-500 to-teal-700 text-white rounded-full text-xs font-medium">
+                Tailwind CSS
+              </span>
+              <span className="py-1 px-3 bg-gradient-to-r from-teal-500 to-teal-700 text-white rounded-full text-xs font-medium">
+                Shadcn/ui
+              </span>
+              <span className="py-1 px-3 bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-full text-xs font-medium">
+                Next Js
+              </span>
+
+              <span className="py-1 px-3 bg-gradient-to-r from-orange-500 to-orange-700 text-white rounded-full text-xs font-medium">
+                Firebase
+              </span>
+              <span className="py-1 px-3 bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-full text-xs font-medium">
+                Supabase
+              </span>
+              <span className="py-1 px-3 bg-gradient-to-r from-green-600 to-green-800 text-white rounded-full text-xs font-medium">
+                Node.js
+              </span>
             </div>
             <br />
             The homepage greets visitors with a captivating hero section,
@@ -267,14 +195,119 @@ export default function Project() {
               href="https://github.com/adarshthapa111/Room-Rental-System"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex space-x-2"
+              className="flex space-x-2 border p-1.5 rounded-md bg-slate-100 shadow-md"
             >
               <GithubIcon className="h-4 w-4" />
               <span>GitHub</span>
             </Link>
             <Link
               href="https://showmeroom.vercel.app/"
-              className="flex space-x-2"
+              className="flex space-x-2 border border-gray-600 p-1.5 rounded-md bg-slate-50 shadow-md"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LinkIcon
+                className="h-4 w-4"
+                target="_blank"
+                rel="noopener noreferrer"
+              />
+              <span>Live Demo</span>
+            </Link>
+          </div>
+        </div>
+        <div className="group relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
+          <div className="absolute inset-0 z-10" prefetch={false}>
+            <span className="sr-only">View project</span>
+          </div>
+          <img
+            src="/img/hamrofurniture.png"
+            width={700}
+            height={500}
+            controls
+            className="h-full w-full object-contain object-center"
+            alt="Book My Room Project Screenshot"
+          />
+        </div>
+      </div>
+
+      <div className="container max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+        <div className="bg-white p-6 rounded-lg shadow-lg">
+          <div className="mb-2 flex items-center justify-between">
+            <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500 font-playfair">
+              Book My Room
+            </h3>
+            <Link
+              href="https://showmeroom.vercel.app/"
+              className="text-sm hover:bg-gradient-to-r from-blue-500 to-purple-500 py-2 px-6 font-medium text-gray-800 hover:text-gray-100 rounded-xl"
+              prefetch={false}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View
+            </Link>
+          </div>
+          <p className="text-sm text-gray-700 dark:text-gray-400 mb-4 text-justify">
+            <div className="flex flex-wrap gap-2 mb-4">
+              <span className="py-1 px-3 bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-full text-xs font-medium">
+                HTML
+              </span>
+              <span className="py-1 px-3 bg-gradient-to-r from-green-500 to-green-700 text-white rounded-full text-xs font-medium">
+                CSS
+              </span>
+              <span className="py-1 px-3 bg-gradient-to-r from-yellow-500 to-yellow-700 text-white rounded-full text-xs font-medium">
+                JavaScript
+              </span>
+              <span className="py-1 px-3 bg-gradient-to-r from-teal-500 to-teal-700 text-white rounded-full text-xs font-medium">
+                Tailwind CSS
+              </span>
+              <span className="py-1 px-3 bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-full text-xs font-medium">
+                React
+              </span>
+              <span className="py-1 px-3 bg-gradient-to-r from-orange-500 to-orange-700 text-white rounded-full text-xs font-medium">
+                Firebase
+              </span>
+              <span className="py-1 px-3 bg-gradient-to-r from-green-600 to-green-800 text-white rounded-full text-xs font-medium">
+                Node.js
+              </span>
+            </div>
+            <br />
+            The homepage greets visitors with a captivating hero section,
+            featuring mouthwatering images of your signature dishes and a
+            welcoming message that encapsulates the essence of your
+            restaurant&apos;s dining experience. Visitors can easily navigate
+            through the website&apos;s intuitive menu, which provides detailed
+            information about your culinary offerings, including appetizers,
+            main courses, desserts, and beverages.
+            <br />
+            <br />
+            One of the standout features of your website is the online ordering
+            system. Customers can conveniently browse through your menu, select
+            their desired items, and place orders directly from the website. The
+            ordering process is streamlined, with a user-friendly interface that
+            guides customers through each step, from selecting dishes to
+            specifying any dietary preferences or special instructions.
+            <br />
+            <br />
+            <div>
+              <div className="flex-col">
+                <span className="">Demo Account: sandesh@gmail.com</span> <br />
+                <span className="">Password: Sandesh@1234</span>
+              </div>
+            </div>
+          </p>
+          <div className="mt-4 flex items-center gap-2 text-sm text-gray-500 ">
+            <Link
+              href="https://github.com/adarshthapa111/Room-Rental-System"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex space-x-2 border p-1.5 rounded-md bg-slate-100 shadow-md"
+            >
+              <GithubIcon className="h-4 w-4" />
+              <span>GitHub</span>
+            </Link>
+            <Link
+              href="https://showmeroom.vercel.app/"
+              className="flex space-x-2 border border-gray-600 p-1.5 rounded-md bg-slate-50 shadow-md"
               target="_blank"
               rel="noopener noreferrer"
             >
