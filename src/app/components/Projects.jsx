@@ -190,7 +190,7 @@ export default function Project() {
           </p>
           <div className="mt-4 flex items-center gap-2 text-sm text-gray-500 ">
             <Link
-              href="https://github.com/adarshthapa111/Room-Rental-System"
+              href="https://github.com/adarshthapa111/Furniture-Website"
               target="_blank"
               rel="noopener noreferrer"
               className="flex space-x-2 border p-1.5 rounded-md bg-slate-100 shadow-md"
@@ -199,7 +199,7 @@ export default function Project() {
               <span>GitHub</span>
             </Link>
             <Link
-              href="https://showmeroom.vercel.app/"
+              href="https://hamrofurniture.vercel.app/"
               className="flex space-x-2 border border-gray-600 p-1.5 rounded-md bg-slate-50 shadow-md"
               target="_blank"
               rel="noopener noreferrer"
