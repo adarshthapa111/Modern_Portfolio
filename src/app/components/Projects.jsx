@@ -125,7 +125,7 @@ export default function Project() {
               Hamro Furniture
             </h3>
             <Link
-              href="https://showmeroom.vercel.app/"
+              href="https://hamrofurniture.vercel.app/"
               className="text-sm hover:bg-gradient-to-r from-gray-500 to-slate-500 py-2 px-6 font-medium text-gray-800 hover:text-gray-100 rounded-xl"
               prefetch={false}
               target="_blank"
@@ -165,28 +165,26 @@ export default function Project() {
                 Node.js
               </span>
             </div>
+            The homepage welcomes visitors with an engaging hero section,
+            showcasing stunning images of your finest furniture pieces and a
+            welcoming message that captures the essence of your brand&apos;s
+            craftsmanship. Visitors can easily navigate through the
+            website&apos;s intuitive catalog, which provides detailed
+            information about your furniture collections, including sofas,
+            tables, chairs, and accessories.
             <br />
-            The homepage greets visitors with a captivating hero section,
-            featuring mouthwatering images of your signature dishes and a
-            welcoming message that encapsulates the essence of your
-            restaurant&apos;s dining experience. Visitors can easily navigate
-            through the website&apos;s intuitive menu, which provides detailed
-            information about your culinary offerings, including appetizers,
-            main courses, desserts, and beverages.
-            <br />
-            <br />
-            One of the standout features of your website is the online ordering
-            system. Customers can conveniently browse through your menu, select
-            their desired items, and place orders directly from the website. The
-            ordering process is streamlined, with a user-friendly interface that
-            guides customers through each step, from selecting dishes to
-            specifying any dietary preferences or special instructions.
-            <br />
+            One of the standout features of your website is the seamless
+            shopping experience. Customers can conveniently browse through your
+            collections, select their desired items, and make purchases directly
+            from the website. The purchasing process is streamlined, with a
+            user-friendly interface that guides customers through each step,
+            from choosing products to specifying any customization options or
+            delivery preferences.
             <br />
             <div>
               <div className="flex-col">
-                <span className="">Demo Account: sandesh@gmail.com</span> <br />
-                <span className="">Password: Sandesh@1234</span>
+                <span className="">Demo Account: san@gmail.com</span> <br />
+                <span className="">Password: san1234</span>
               </div>
             </div>
           </p>
