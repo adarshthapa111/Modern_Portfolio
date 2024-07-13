@@ -4,13 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities{
-    .paused{
+@layer utilities {
+    .paused {
         animation-play-state: paused;
     }
 }
 
 .custom-shape {
     clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
-  }
-  
+}
+
+.wave-top {
+    clip-path: path('M 0,100 Q 400,200 800,100 Q 1200,0 1600,100 Q 2000,200 2400,100 V 800 Q 2000,900 1600,800 Q 1200,700 800,800 Q 400,900 0,800 Z');
+}
