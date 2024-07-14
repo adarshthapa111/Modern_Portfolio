@@ -72,11 +72,15 @@ export default function Project() {
                     <div>
                       <p className="text-muted-foreground text-justify">
                         This project involved the design and development of a
-                        custom web application for a leading e-commerce company.
-                        The application features a modern and responsive user
-                        interface, advanced product management tools, and
-                        seamless integration with the company's existing
-                        systems.
+                        custom web application for a restaurant. The application
+                        features a modern and responsive user interface,
+                        advanced product management tools, and seamless
+                        integration with the company&apos;s existing systems. I have
+                        integrated full system for online ordering and
+                        reservation system. Customer can view the calories in
+                        their food. Also there is seprate admin dashboard for
+                        food adding, customer tracking and full analytics of
+                        table reservation and online ordering.
                       </p>
                     </div>
                     <div>
@@ -86,7 +90,7 @@ export default function Project() {
                       <ul className="grid gap-2 text-muted-foreground">
                         <li className="flex items-center gap-2">
                           <CalendarIcon className="w-5 h-5" />
-                          <span>Duration: 1.5 months</span>
+                          <span>Duration: 3 months</span>
                         </li>
                         <li className="flex items-center gap-2">
                           <UsersIcon className="w-5 h-5" />
@@ -94,11 +98,14 @@ export default function Project() {
                         </li>
                         <li className="flex items-center gap-2">
                           <BriefcaseIcon className="w-5 h-5" />
-                          <span>Industry: E-commerce</span>
+                          <span>Industry: Hospitality</span>
                         </li>
                         <li className="flex items-center gap-2">
                           <CodeIcon className="w-5 h-5" />
-                          <span>Technologies: HTML, Tailwind CSS, React Js, Firebase, Node Js </span>
+                          <span>
+                            Technologies: HTML, Tailwind CSS, React Js,
+                            Firebase, Node Js{" "}
+                          </span>
                         </li>
                       </ul>
                       <div>
@@ -170,7 +177,7 @@ export default function Project() {
                       custom web application for a leading e-commerce company.
                       The application features a modern and responsive user
                       interface, advanced product management tools, and seamless
-                      integration with the company's existing systems.
+                      integration with the company&apos;s existing systems.
                     </p>
                   </div>
                   <div>
@@ -192,7 +199,10 @@ export default function Project() {
                       </li>
                       <li className="flex items-center gap-2">
                         <CodeIcon className="w-5 h-5" />
-                        <span>Technologies: HTML, Tailwind CSS, Next Js, Supabase, Firebase </span>
+                        <span>
+                          Technologies: HTML, Tailwind CSS, Next Js, Supabase,
+                          Firebase{" "}
+                        </span>
                       </li>
                     </ul>
                     <div>
@@ -333,7 +343,7 @@ export default function Project() {
                       custom web application for hotel room booking. The
                       application features a modern and responsive user
                       interface, room booking avaibilites for login user, and
-                      seamless integration with the company's existing systems.
+                      seamless integration with the company&apos;s existing systems.
                       Also, user can add and update their room.
                     </p>
                   </div>
@@ -344,7 +354,7 @@ export default function Project() {
                     <ul className="grid gap-2 text-muted-foreground">
                       <li className="flex items-center gap-2">
                         <CalendarIcon className="w-5 h-5" />
-                        <span>Duration: 1.5 months</span>
+                        <span>Duration: 2 months</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <UsersIcon className="w-5 h-5" />
@@ -352,11 +362,14 @@ export default function Project() {
                       </li>
                       <li className="flex items-center gap-2">
                         <BriefcaseIcon className="w-5 h-5" />
-                        <span>Industry: E-commerce</span>
+                        <span>Industry: Tours and Travel</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <CodeIcon className="w-5 h-5" />
-                        <span>Technologies: HTML, Tailwind CSS, Next Js, Supabase, Firebase </span>
+                        <span>
+                          Technologies: HTML, Tailwind CSS, Next Js, Supabase,
+                          Firebase{" "}
+                        </span>
                       </li>
                     </ul>
                     <div>
