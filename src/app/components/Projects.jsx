@@ -25,8 +25,8 @@ export default function Project() {
                   src="/img/khanaaau.png"
                   alt="Project Image 1"
                   width={600}
-                  height={400}
-                  className="rounded-lg overflow-hidden border border-gray-200 transform transition-transform duration-300 hover:scale-105"
+                  height={1000}
+                  className="rounded-lg h-96 object-contain overflow-hidden border border-gray-200 transform transition-transform duration-300 hover:scale-105"
                 />
               </div>
               <div className="col-span-1 z-20">
@@ -51,7 +51,7 @@ export default function Project() {
           </div>
           <div className="">
             <div className="text-sm text-gray-500 dark:text-gray-400 text-justify">
-              <div className="bg-white p-6 rounded-lg shadow-lg">
+              <div className="bg-white p-6 rounded-lg shadow-lg border">
                 <div className="mb-2 flex items-center justify-between">
                   <h3 className="text-4xl font-bold text-transparent bg-clip-text bg-orange-500 font-playfair">
                     Khana Aau
@@ -67,7 +67,7 @@ export default function Project() {
                   </Link>
                 </div>
 
-                <div className="flex flex-col gap-6">
+                <div className="flex flex-col gap-4">
                   <div className="grid gap-4">
                     <div>
                       <p className="text-muted-foreground text-justify">
@@ -75,8 +75,8 @@ export default function Project() {
                         custom web application for a restaurant. The application
                         features a modern and responsive user interface,
                         advanced product management tools, and seamless
-                        integration with the company&apos;s existing systems. I have
-                        integrated full system for online ordering and
+                        integration with the company&apos;s existing systems. I
+                        have integrated full system for online ordering and
                         reservation system. Customer can view the calories in
                         their food. Also there is seprate admin dashboard for
                         food adding, customer tracking and full analytics of
@@ -108,17 +108,32 @@ export default function Project() {
                           </span>
                         </li>
                       </ul>
-                      <div>
-                        <h2 className="text-2xl font-semibold font-playfair text-gray-800 my-2">
-                          Demo Account
-                        </h2>
-                        <div className="flex items-center gap-2 text-muted-foreground">
-                          <UserIcon className="w-5 h-5" />
-                          <span>Username: sandesh@gmail.com</span>
+                      <div className="flex justify-between">
+                        <div>
+                          <h2 className="text-2xl font-semibold font-playfair text-gray-800 my-2">
+                            Demo User Account
+                          </h2>
+                          <div className="flex items-center gap-2 text-muted-foreground">
+                            <UserIcon className="w-5 h-5" />
+                            <span>Username: sandesh@gmail.com</span>
+                          </div>
+                          <div className="flex items-center gap-2 text-muted-foreground">
+                            <LockIcon className="w-5 h-5" />
+                            <span>Password: Sandesh@1234</span>
+                          </div>
                         </div>
-                        <div className="flex items-center gap-2 text-muted-foreground">
-                          <LockIcon className="w-5 h-5" />
-                          <span>Password: Sandesh@1234</span>
+                        <div>
+                          <h2 className="text-2xl font-semibold font-playfair text-gray-800 my-2">
+                            Demo Admin Account
+                          </h2>
+                          <div className="flex items-center gap-2 text-muted-foreground">
+                            <UserIcon className="w-5 h-5" />
+                            <span>Username: adarsh@gmail.com</span>
+                          </div>
+                          <div className="flex items-center gap-2 text-muted-foreground">
+                            <LockIcon className="w-5 h-5" />
+                            <span>Password: adarsh1234</span>
+                          </div>
                         </div>
                       </div>
                       <div className="my-6 space-x-4">
@@ -256,7 +271,7 @@ export default function Project() {
                     alt="Project Image 1"
                     width={600}
                     height={400}
-                    className="rounded-lg overflow-hidden border border-gray-200 transform transition-transform duration-300 hover:scale-105"
+                    className="rounded-lg h-96 object-cover overflow-hidden border border-gray-200 transform transition-transform duration-300 hover:scale-105"
                   />
                 </div>
                 <div className="col-span-1 z-20">
@@ -343,8 +358,8 @@ export default function Project() {
                       custom web application for hotel room booking. The
                       application features a modern and responsive user
                       interface, room booking avaibilites for login user, and
-                      seamless integration with the company&apos;s existing systems.
-                      Also, user can add and update their room.
+                      seamless integration with the company&apos;s existing
+                      systems. Also, user can add and update their room.
                     </p>
                   </div>
                   <div>
