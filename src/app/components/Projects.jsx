@@ -14,7 +14,7 @@ export default function Project() {
             </h1>
           </div>
         </div>
-        <div className="container max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20">
+        <div className="container max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20">
           <div className="group relative overflow-hidden ">
             <div className="absolute inset-0 z-10 " prefetch={false}>
               <span className="sr-only">My Overall Projects</span>

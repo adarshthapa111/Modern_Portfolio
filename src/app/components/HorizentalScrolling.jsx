@@ -1,12 +1,12 @@
 import Link from "next/link";
-import Image from "next/image"
+import Image from "next/image";
 
 export default function HorizentalScrolling() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 max-w-6xl mx-auto">
-        <h1 className="text-xl md:text-4xl p-6 font-semibold font-playfair">
-          <span className="text-red-500"> Go-To</span> Tools
-        </h1>
+    <section className="w-full py-12 md:py-24 lg:py-32 max-w-7xl mx-auto">
+      <h1 className="text-xl md:text-4xl p-6 font-semibold font-playfair">
+        <span className="text-red-500"> Go-To</span> Tools
+      </h1>
       <div className="container grid gap-6 px-4 md:px-6 lg:grid-cols-3 xl:grid-cols-4">
         <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">
           <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
@@ -117,7 +117,11 @@ export default function HorizentalScrolling() {
           </div>
         </div>
         <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">
-          <Link href="https://firebase.google.com" className="absolute inset-0 z-10" prefetch={false}>
+          <Link
+            href="https://firebase.google.com"
+            className="absolute inset-0 z-10"
+            prefetch={false}
+          >
             <span className="sr-only">View Firebase</span>
           </Link>
           <div className="flex flex-col items-center justify-center gap-2 bg-white p-6">

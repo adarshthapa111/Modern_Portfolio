@@ -238,8 +238,12 @@ const ModernAbout = () => {
         "I have created a full UI of restaurant and room rental system website with the help of figma.",
     },
     {
-      title: "Full Restaurant Website",
+      title: "Full Stack Restaurant Management System",
       description: "I have designed a full front-end & back-end of system.",
+    },
+    {
+      title: "Full Stack Furniture Website",
+      description: "I have created a full front-end and back-end of system.",
     },
     {
       title: "Hotel Room Rental System",
@@ -258,7 +262,7 @@ const ModernAbout = () => {
     },
     {
       title: "Herald College Kathmandu",
-      description: "Studying undergraduate in this college.",
+      description: "Completed undergraduate in this college.",
     },
   ];
 
