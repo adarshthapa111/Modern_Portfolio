@@ -117,7 +117,7 @@ const MainSection = () => {
                     alt="Adarsh Thapa"
                     width={500}
                     height={500}
-                    className="object-contain absolute -top-36 xl:-top-48 "
+                    className="object-contain absolute "
                   />
                   {/* <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div> */}
                   <div className="absolute top-4 right-4 bg-black rounded-full p-2 animate-pulse">
