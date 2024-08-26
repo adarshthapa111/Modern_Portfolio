@@ -1,641 +1,269 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import {
+  CalendarIcon,
+  BriefcaseIcon,
+  CodeIcon,
+  UsersIcon,
+  UserIcon,
+  LockIcon,
+  ExternalLinkIcon,
+  GithubIcon,
+} from "lucide-react";
 
-export default function Project() {
+const projects = [
+  {
+    id: "khanaau",
+    title: "Khana Aau",
+    description:
+      "A custom web application for a restaurant featuring online ordering, reservation system, and admin dashboard.",
+    images: ["/img/khanaaau.png", "/img/khanaaau1.png", "/img/khanaaau2.png"],
+    details: {
+      duration: "3 months",
+      team: "Alone",
+      industry: "Hospitality",
+      technologies: "HTML, Tailwind CSS, React Js, Firebase, Node Js",
+    },
+    demoAccounts: {
+      user: { username: "sandesh@gmail.com", password: "Sandesh@1234" },
+      admin: { username: "adarsh@gmail.com", password: "adarsh1234" },
+    },
+    links: {
+      github: "https://github.com/adarshthapa111/Restaurant_Management_Website",
+      demo: "https://khanaaau.vercel.app/",
+    },
+    color: "from-orange-500 to-red-500",
+  },
+  {
+    id: "hamrofurniture",
+    title: "Hamro Furniture",
+    description:
+      "An e-commerce web application for a leading furniture company with advanced product management tools.",
+    images: [
+      "/img/furniture.png",
+      "/img/furniture2.png",
+      "/img/furniture3.png",
+    ],
+    details: {
+      duration: "1.5 months",
+      team: "Alone",
+      industry: "E-commerce",
+      technologies: "HTML, Tailwind CSS, Next Js, Supabase, Firebase",
+    },
+    demoAccounts: {
+      user: { username: "san@gmail.com", password: "san1234" },
+    },
+    links: {
+      github: "https://github.com/adarshthapa111/Furniture-Website",
+      demo: "https://hamrofurniture.vercel.app/",
+    },
+    color: "from-gray-500 to-slate-500",
+  },
+  {
+    id: "bookmyroom",
+    title: "Book My Room",
+    description:
+      "A hotel room booking application with user authentication and room management features.",
+    images: [
+      "/img/bookmyroom.png",
+      "/img/bookmyroom2.png",
+      "/img/bookmyroom1.png",
+    ],
+    details: {
+      duration: "2 months",
+      team: "Alone",
+      industry: "Tours and Travel",
+      technologies: "HTML, Tailwind CSS, Next Js, Supabase, Firebase",
+    },
+    demoAccounts: {
+      user: { username: "sandesh@gmail.com", password: "Sandesh@1234" },
+    },
+    links: {
+      github: "https://github.com/adarshthapa111/Hotel_Room_Rental_System",
+      demo: "https://showmeroom.vercel.app/",
+    },
+    color: "from-purple-500 to-blue-500",
+  },
+];
+
+export default function Component() {
+  const [selectedProject, setSelectedProject] = useState(projects[0]);
+
   return (
-    <>
-      <section className="w-full py-12 md:py-24 lg:py-32">
-        <div className="overflow-hidden whitespace-nowrap">
-          <div className="flex">
-            <h1 className="text-xl md:text-4xl xl:text-6xl my-6 text-center font-playfair font-bold max-w-6xl mx-auto text-gray-900 ">
-              <span className="text-red-500">◆</span> My{" "}
-              <span className="text-red-500">Overall</span> Projects{" "}
-              <span className="text-red-500">◆</span>
-            </h1>
-          </div>
-        </div>
-        <div className="container max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20">
-          <div className="group relative overflow-hidden ">
-            <div className="absolute inset-0 z-10 " prefetch={false}>
-              <span className="sr-only">My Overall Projects</span>
-            </div>
-            <div className="relative grid grid-cols-2 gap-4">
-              <div className="col-span-2 z-10">
-                <Image
-                  src="/img/khanaaau.png"
-                  alt="Project Image 1"
-                  width={600}
-                  height={1000}
-                  className="rounded-lg h-96 object-contain overflow-hidden border border-gray-200 transform transition-transform duration-300 hover:scale-105"
-                />
-              </div>
-              <div className="col-span-1 z-20">
-                <Image
-                  src="/img/khanaaau1.png"
-                  alt="Project Image 2"
-                  width={300}
-                  height={300}
-                  className="rounded-lg h-52 object-contain overflow-hidden border border-gray-200 transform transition-transform duration-300 hover:scale-110"
-                />
-              </div>
-              <div className="col-span-1 z-20">
-                <Image
-                  src="/img/khanaaau2.png"
-                  alt="Project Image 3"
-                  width={300}
-                  height={400}
-                  className="rounded-lg h-52 object-contain overflow-hidden border border-gray-200 transform transition-transform duration-300 hover:scale-110"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="">
-            <div className="text-sm text-gray-500 dark:text-gray-400 text-justify">
-              <div className="bg-white p-6 rounded-lg shadow-lg border">
-                <div className="mb-2 flex items-center justify-between">
-                  <h3 className="text-4xl font-bold text-transparent bg-clip-text bg-orange-500 font-playfair">
-                    Khana Aau
-                  </h3>
-                  <Link
-                    href="https://khanaaau.vercel.app/"
-                    className="text-sm bg-orange-500 py-2 px-6 font-medium text-gray-100 rounded-xl border-2 border-gray-200"
-                    prefetch={false}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View
-                  </Link>
-                </div>
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-gray-50 to-white">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="container mx-auto px-4"
+      >
+        <h1 className="text-3xl md:text-5xl font-bold text-center mb-12">
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-600">
+            My Overall Projects
+          </span>
+        </h1>
 
-                <div className="flex flex-col gap-4">
-                  <div className="grid gap-4">
-                    <div>
-                      <p className="text-muted-foreground text-justify">
-                        This project involved the design and development of a
-                        custom web application for a restaurant. The application
-                        features a modern and responsive user interface,
-                        advanced product management tools, and seamless
-                        integration with the company&apos;s existing systems. I
-                        have integrated full system for online ordering and
-                        reservation system. Customer can view the calories in
-                        their food. Also there is seprate admin dashboard for
-                        food adding, customer tracking and full analytics of
-                        table reservation and online ordering.
-                      </p>
-                    </div>
-                    <div>
-                      <h2 className="text-2xl my-2 tracking-wider font-semibold font-playfair text-gray-800">
-                        Project Details
-                      </h2>
-                      <ul className="grid gap-2 text-muted-foreground">
-                        <li className="flex items-center gap-2">
-                          <CalendarIcon className="w-5 h-5" />
-                          <span>Duration: 3 months</span>
-                        </li>
-                        <li className="flex items-center gap-2">
-                          <UsersIcon className="w-5 h-5" />
-                          <span>Team: Alone</span>
-                        </li>
-                        <li className="flex items-center gap-2">
-                          <BriefcaseIcon className="w-5 h-5" />
-                          <span>Industry: Hospitality</span>
-                        </li>
-                        <li className="flex items-center gap-2">
-                          <CodeIcon className="w-5 h-5" />
-                          <span>
-                            Technologies: HTML, Tailwind CSS, React Js,
-                            Firebase, Node Js{" "}
-                          </span>
-                        </li>
-                      </ul>
-                      <div className="flex justify-between">
-                        <div>
-                          <h2 className="text-2xl font-semibold font-playfair text-gray-800 my-2">
-                            Demo User Account
-                          </h2>
-                          <div className="flex items-center gap-2 text-muted-foreground">
-                            <UserIcon className="w-5 h-5" />
-                            <span>Username: sandesh@gmail.com</span>
-                          </div>
-                          <div className="flex items-center gap-2 text-muted-foreground">
-                            <LockIcon className="w-5 h-5" />
-                            <span>Password: Sandesh@1234</span>
-                          </div>
-                        </div>
-                        <div>
-                          <h2 className="text-2xl font-semibold font-playfair text-gray-800 my-2">
-                            Demo Admin Account
-                          </h2>
-                          <div className="flex items-center gap-2 text-muted-foreground">
-                            <UserIcon className="w-5 h-5" />
-                            <span>Username: adarsh@gmail.com</span>
-                          </div>
-                          <div className="flex items-center gap-2 text-muted-foreground">
-                            <LockIcon className="w-5 h-5" />
-                            <span>Password: adarsh1234</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="my-6 space-x-4">
-                        <Link
-                          href="https://github.com/adarshthapa111/Restaurant_Management_Website"
-                          prefetch={false}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <button className="bg-orange-500 py-2 px-4 text-white font-playfair tracking-wider rounded-sm shadow-md shadow-gray-400 border-gray-100 border-2 text-center">
-                            Link to Github ☛
-                          </button>
-                        </Link>
-                        <Link
-                          href="https://khanaaau.vercel.app/"
-                          prefetch={false}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <button className="bg-orange-500 py-2 px-4 text-white font-playfair tracking-wider rounded-sm shadow-md shadow-gray-400 border-gray-100 border-2 text-center">
-                            Live Demo ☛
-                          </button>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div className="w-full">
+          <div className="flex justify-center mb-8">
+            {projects.map((project) => (
+              <button
+                key={project.id}
+                onClick={() => setSelectedProject(project)}
+                className={`px-4 py-2 text-sm md:text-base font-medium rounded-sm  transition-colors duration-200 ease-in-out
+                  ${
+                    selectedProject.id === project.id
+                      ? "bg-gray-400 border border-gray-200 shadow-md text-gray-50"
+                      : "text-gray-600 hover:bg-gray-100"
+                  }`}
+              >
+                {project.title}
+              </button>
+            ))}
           </div>
-        </div>
-        {/* Hamro Furniture  */}
-        <div className="py-20">
-          <div className="container max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-            <div className="bg-white p-6 rounded-lg shadow-lg border">
-              <div className="mb-2 flex items-center justify-between">
-                <h3 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-gray-500 to-slate-500 font-playfair">
-                  Hamro Furniture
-                </h3>
-                <Link
-                  href="https://hamrofurniture.vercel.app/"
-                  className="text-sm bg-gradient-to-r from-gray-500 to-slate-500 py-2 px-6 font-medium text-gray-100 rounded-xl"
-                  prefetch={false}
-                  target="_blank"
-                  rel="noopener noreferrer"
+
+          <motion.div
+            key={selectedProject.id}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.3 }}
+            className="bg-white rounded-lg border shadow-lg overflow-hidden"
+          >
+            <div className="p-6 md:p-8">
+              <motion.h2
+                className={`text-3xl md:text-4xl font-bold bg-gradient-to-r ${selectedProject.color} bg-clip-text text-transparent mb-4`}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.2 }}
+              >
+                {selectedProject.title}
+              </motion.h2>
+
+              <div className="grid md:grid-cols-2 gap-8">
+                <motion.div
+                  className="space-y-4"
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.3 }}
                 >
-                  View
-                </Link>
-              </div>
-
-              <div className="flex flex-col gap-6">
-                <div className="grid gap-4">
-                  <div>
-                    <p className="text-muted-foreground text-justify">
-                      This project involved the design and development of a
-                      custom web application for a leading e-commerce company.
-                      The application features a modern and responsive user
-                      interface, advanced product management tools, and seamless
-                      integration with the company&apos;s existing systems.
-                    </p>
-                  </div>
-                  <div>
-                    <h2 className="text-2xl my-2 tracking-wider font-semibold font-playfair">
+                  <p className="text-gray-600">{selectedProject.description}</p>
+                  <div className="space-y-2">
+                    <h3 className="text-xl font-semibold text-gray-800">
                       Project Details
-                    </h2>
-                    <ul className="grid gap-2 text-muted-foreground">
-                      <li className="flex items-center gap-2">
-                        <CalendarIcon className="w-5 h-5" />
-                        <span>Duration: 1.5 months</span>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <UsersIcon className="w-5 h-5" />
-                        <span>Team: Alone</span>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <BriefcaseIcon className="w-5 h-5" />
-                        <span>Industry: E-commerce</span>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <CodeIcon className="w-5 h-5" />
+                    </h3>
+                    <ul className="space-y-1">
+                      <li className="flex items-center gap-2 text-gray-600">
+                        <CalendarIcon className="w-4 h-4" />
                         <span>
-                          Technologies: HTML, Tailwind CSS, Next Js, Supabase,
-                          Firebase{" "}
+                          Duration: {selectedProject.details.duration}
+                        </span>
+                      </li>
+                      <li className="flex items-center gap-2 text-gray-600">
+                        <UsersIcon className="w-4 h-4" />
+                        <span>Team: {selectedProject.details.team}</span>
+                      </li>
+                      <li className="flex items-center gap-2 text-gray-600">
+                        <BriefcaseIcon className="w-4 h-4" />
+                        <span>
+                          Industry: {selectedProject.details.industry}
+                        </span>
+                      </li>
+                      <li className="flex items-center gap-2 text-gray-600">
+                        <CodeIcon className="w-4 h-4" />
+                        <span>
+                          Technologies: {selectedProject.details.technologies}
                         </span>
                       </li>
                     </ul>
-                    <div>
-                      <h2 className="text-2xl font-semibold font-playfair">
-                        Demo Account
-                      </h2>
-                      <div className="flex items-center gap-2 text-muted-foreground">
-                        <UserIcon className="w-5 h-5" />
-                        <span>Username: san@gmail.com</span>
-                      </div>
-                      <div className="flex items-center gap-2 text-muted-foreground">
-                        <LockIcon className="w-5 h-5" />
-                        <span>Password: san1234</span>
-                      </div>
-                    </div>
-                    <div className="my-6 space-x-4">
-                      <Link
-                        href="https://github.com/adarshthapa111/Furniture-Website"
-                        prefetch={false}
-                        rel="noopener noreferrer"
-                        target="_blank"
-                      >
-                        <button className="bg-gray-900 py-2 px-4 text-white font-playfair tracking-wider rounded-sm shadow-md shadow-gray-400 border-gray-100 border-2 text-center">
-                          Link to Github ☛
-                        </button>
-                      </Link>
-
-                      <Link
-                        href="https://hamrofurniture.vercel.app/"
-                        prefetch={false}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <button className="bg-gray-900 py-2 px-4 text-white font-playfair tracking-wider rounded-sm shadow-md shadow-gray-400 border-gray-100 border-2 text-center">
-                          Live Demo ☛
-                        </button>
-                      </Link>
-                    </div>
                   </div>
-                </div>
+                  {selectedProject.demoAccounts && (
+                    <div className="space-y-2">
+                      <h3 className="text-xl font-semibold text-gray-800">
+                        Demo Accounts
+                      </h3>
+                      {Object.entries(selectedProject.demoAccounts).map(
+                        ([type, account]) => (
+                          <div key={type} className="space-y-1">
+                            <h4 className="font-medium capitalize text-gray-700">
+                              {type} Account
+                            </h4>
+                            <p className="flex items-center gap-2 text-gray-600">
+                              <UserIcon className="w-4 h-4" />
+                              <span>{account.username}</span>
+                            </p>
+                            <p className="flex items-center gap-2 text-gray-600">
+                              <LockIcon className="w-4 h-4" />
+                              <span>{account.password}</span>
+                            </p>
+                          </div>
+                        )
+                      )}
+                    </div>
+                  )}
+                </motion.div>
+                <motion.div
+                  className="grid grid-cols-2 gap-4"
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.4 }}
+                >
+                  {selectedProject.images.map((image, index) => (
+                    <motion.div
+                      key={index}
+                      className={`relative overflow-hidden rounded-lg ${
+                        index === 0 ? "col-span-2" : "col-span-1"
+                      }`}
+                      whileHover={{ scale: 1.05 }}
+                      transition={{ type: "spring", stiffness: 300 }}
+                    >
+                      <Image
+                        src={image}
+                        alt={`${selectedProject.title} screenshot ${index + 1}`}
+                        width={600}
+                        height={400}
+                        className="w-full h-full border border-gray-200 object-cover"
+                      />
+                    </motion.div>
+                  ))}
+                </motion.div>
               </div>
             </div>
-            <div className="group relative overflow-hidden rounded-lg">
-              <div className="absolute inset-0 z-10" prefetch={false}>
-                <span className="sr-only">View project</span>
-              </div>
-              <div className="relative grid grid-cols-2 gap-4">
-                <div className="col-span-2 z-10">
-                  <Image
-                    src="/img/furniture.png"
-                    alt="Project Image 1"
-                    width={600}
-                    height={400}
-                    className="rounded-lg h-96 object-cover overflow-hidden border border-gray-200 transform transition-transform duration-300 hover:scale-105"
-                  />
-                </div>
-                <div className="col-span-1 z-20">
-                  <Image
-                    src="/img/furniture2.png"
-                    alt="Project Image 2"
-                    width={300}
-                    height={300}
-                    className="rounded-lg h-52 object-contain overflow-hidden border border-gray-200 transform transition-transform duration-300 hover:scale-110"
-                  />
-                </div>
-                <div className="col-span-1 z-20">
-                  <Image
-                    src="/img/furniture3.png"
-                    alt="Project Image 3"
-                    width={300}
-                    height={400}
-                    className="rounded-lg h-52 object-contain overflow-hidden border border-gray-200 transform transition-transform duration-300 hover:scale-110"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Book My Room  */}
-        <div className="container max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 min-h-screen">
-          <div className="group relative overflow-hidden">
-            <div className="absolute inset-0 z-10" prefetch={false}>
-              <span className="sr-only">View project</span>
-            </div>
-            <div className="relative grid grid-cols-2 gap-4">
-              <div className="col-span-2 z-10">
-                <Image
-                  src="/img/bookmyroom.png"
-                  alt="Project Image 1"
-                  width={600}
-                  height={400}
-                  className="rounded-lg overflow-hidden border border-gray-200 transform transition-transform duration-300 hover:scale-105"
-                />
-              </div>
-              <div className="col-span-1 z-20">
-                <Image
-                  src="/img/bookmyroom2.png"
-                  alt="Project Image 2"
-                  width={300}
-                  height={300}
-                  className="rounded-lg h-52 object-contain overflow-hidden border border-gray-200 transform transition-transform duration-300 hover:scale-110"
-                />
-              </div>
-              <div className="col-span-1 z-20">
-                <Image
-                  src="/img/bookmyroom1.png"
-                  alt="Project Image 3"
-                  width={300}
-                  height={400}
-                  className="rounded-lg h-52 object-contain overflow-hidden border border-gray-200 transform transition-transform duration-300 hover:scale-110"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="text-sm text-gray-500 dark:text-gray-400 text-justify">
-            <div className="bg-white p-6 rounded-lg shadow-lg border">
-              <div className="mb-2 flex items-center justify-between">
-                <h3 className="text-4xl font-bold bg-gradient-to-r from-purple-500 to-blue-500  bg-clip-text text-transparent font-playfair">
-                  Book My Room
-                </h3>
-                <Link
-                  href="https://showmeroom.vercel.app/"
-                  className="text-sm shadow-gray-400 bg-gradient-to-r from-purple-500 to-blue-500  py-2 px-6 font-medium text-gray-100 rounded-xl border-2 border-gray-200"
-                  prefetch={false}
+            <div className="bg-gray-50 px-6 py-4 flex justify-between flex-wrap gap-4">
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <a
+                  href={selectedProject.links.github}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
-                  View
-                </Link>
-              </div>
-
-              <div className="flex flex-col gap-6">
-                <div className="grid gap-4">
-                  <div>
-                    <p className="text-muted-foreground text-justify">
-                      This project involved the design and development of a
-                      custom web application for hotel room booking. The
-                      application features a modern and responsive user
-                      interface, room booking avaibilites for login user, and
-                      seamless integration with the company&apos;s existing
-                      systems. Also, user can add and update their room.
-                    </p>
-                  </div>
-                  <div>
-                    <h2 className="text-2xl my-2 tracking-wider font-semibold font-playfair text-gray-800">
-                      Project Details
-                    </h2>
-                    <ul className="grid gap-2 text-muted-foreground">
-                      <li className="flex items-center gap-2">
-                        <CalendarIcon className="w-5 h-5" />
-                        <span>Duration: 2 months</span>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <UsersIcon className="w-5 h-5" />
-                        <span>Team: Alone</span>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <BriefcaseIcon className="w-5 h-5" />
-                        <span>Industry: Tours and Travel</span>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <CodeIcon className="w-5 h-5" />
-                        <span>
-                          Technologies: HTML, Tailwind CSS, Next Js, Supabase,
-                          Firebase{" "}
-                        </span>
-                      </li>
-                    </ul>
-                    <div>
-                      <h2 className="text-2xl font-semibold font-playfair text-gray-800 my-2">
-                        Demo Account
-                      </h2>
-                      <div className="flex items-center gap-2 text-muted-foreground">
-                        <UserIcon className="w-5 h-5" />
-                        <span>Username: sandesh@gmail.com</span>
-                      </div>
-                      <div className="flex items-center gap-2 text-muted-foreground">
-                        <LockIcon className="w-5 h-5" />
-                        <span>Password: Sandesh@1234</span>
-                      </div>
-                    </div>
-                    <div className="my-6 space-x-4">
-                      <Link
-                        href="https://github.com/adarshthapa111/Hotel_Room_Rental_System"
-                        prefetch={false}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      ></Link>
-                      <button className="bg-gradient-to-r from-purple-500 to-blue-500 py-2 px-4 text-white font-playfair tracking-wider rounded-sm shadow-md shadow-gray-400 border-gray-100 border-2 text-center">
-                        Link to Github ☛
-                      </button>
-
-                      <Link
-                        href="https://showmeroom.vercel.app/"
-                        prefetch={false}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <button className="bg-gradient-to-r from-purple-500 to-blue-500  py-2 px-4 text-white font-playfair tracking-wider rounded-sm shadow-md shadow-gray-400 border-gray-100 border-2 text-center">
-                          Live Demo ☛
-                        </button>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                  <GithubIcon className="w-4 h-4 mr-2" />
+                  View on GitHub
+                </a>
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <a
+                  href={selectedProject.links.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gradient-to-r ${selectedProject.color} hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500`}
+                >
+                  <ExternalLinkIcon className="w-4 h-4 mr-2" />
+                  Live Demo
+                </a>
+              </motion.div>
             </div>
-          </div>
+          </motion.div>
         </div>
-      </section>
-    </>
+      </motion.div>
+    </section>
   );
 }
-
-function ExternalLinkIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M15 3h6v6" />
-      <path d="M10 14 21 3" />
-      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-    </svg>
-  );
-}
-
-function LockIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <rect width="18" height="11" x="3" y="11" rx="2" ry="2" />
-      <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-    </svg>
-  );
-}
-
-function UserIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
-      <circle cx="12" cy="7" r="4" />
-    </svg>
-  );
-}
-
-function GithubIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
-      <path d="M9 18c-4.51 2-5-2-7-2" />
-    </svg>
-  );
-}
-
-function LinkIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-      <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-    </svg>
-  );
-}
-function BriefcaseIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
-      <rect width="20" height="14" x="2" y="6" rx="2" />
-    </svg>
-  );
-}
-
-function CalendarIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M8 2v4" />
-      <path d="M16 2v4" />
-      <rect width="18" height="18" x="3" y="4" rx="2" />
-      <path d="M3 10h18" />
-    </svg>
-  );
-}
-
-function CodeIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <polyline points="16 18 22 12 16 6" />
-      <polyline points="8 6 2 12 8 18" />
-    </svg>
-  );
-}
-
-function UsersIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-      <circle cx="9" cy="7" r="4" />
-      <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-      <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-    </svg>
-  );
-}
-
-function XIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M18 6 6 18" />
-      <path d="m6 6 12 12" />
-    </svg>
-  );
-}
-
-
-

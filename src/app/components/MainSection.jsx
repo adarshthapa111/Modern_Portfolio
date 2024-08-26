@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import Socialicons from "./Socialicons"
-import Image from "next/image"
+import Socialicons from "./Socialicons";
+import Image from "next/image";
 const MainSection = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const tools = [
@@ -23,17 +23,15 @@ const MainSection = () => {
                 </span>
               </div>
               <nav className="hidden md:flex space-x-6 items-center">
-                {["Home", "Tools", "About", "Projects", "Services"].map(
-                  (item) => (
-                    <a
-                      key={item}
-                      href={`#${item.toLowerCase()}`}
-                      className="text-gray-600 hover:text-black transition duration-300"
-                    >
-                      {item}
-                    </a>
-                  )
-                )}
+                {["Home", "Tools", "About", "Projects"].map((item) => (
+                  <a
+                    key={item}
+                    href={`#${item.toLowerCase()}`}
+                    className="text-gray-600 hover:text-black transition duration-300"
+                  >
+                    {item}
+                  </a>
+                ))}
               </nav>
               <button className="hidden md:block bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 transition duration-300">
                 Let&apos;s chat
@@ -50,18 +48,16 @@ const MainSection = () => {
           {isMenuOpen && (
             <div className="md:hidden bg-white fixed inset-0 z-40 flex flex-col items-center justify-center">
               <nav className="flex flex-col space-y-6 items-center">
-                {["Home", "Works", "About", "Projects", "Services"].map(
-                  (item) => (
-                    <a
-                      key={item}
-                      href={`#${item.toLowerCase()}`}
-                      className="text-2xl text-gray-600 hover:text-black transition duration-300"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      {item}
-                    </a>
-                  )
-                )}
+                {["Home", "Works", "About", "Projects"].map((item) => (
+                  <a
+                    key={item}
+                    href={`#${item.toLowerCase()}`}
+                    className="text-2xl text-gray-600 hover:text-black transition duration-300"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item}
+                  </a>
+                ))}
               </nav>
               <button
                 className="mt-8 bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 transition duration-300"
@@ -83,8 +79,8 @@ const MainSection = () => {
                   </span>
                 </h1>
                 <h2 className="text-5xl  text-white sm:text-6xl md:text-7xl font-extrabold leading-none ">
-                  <span className="text-gray-800">Adarsh</span>{" "}
-                  <span className="text-border-black">Thapa.</span>
+                  <span className="text-gray-800">Adarsh Thapa</span>{" "}
+                  
                 </h2>
                 <p className="text-gray-700 text-xl max-w-md">
                   Working as a Frontend Dev for 6 months

@@ -223,12 +223,12 @@ const ModernAbout = () => {
       icon: GraduationCap,
       color: "from-purple-500 to-pink-500",
     },
-    {
-      id: "awards",
-      title: "Awards",
-      icon: Award,
-      color: "from-yellow-500 to-red-500",
-    },
+    // {
+    //   id: "awards",
+    //   title: "Awards",
+    //   icon: Award,
+    //   color: "from-yellow-500 to-red-500",
+    // },
   ];
 
   const skills = [
