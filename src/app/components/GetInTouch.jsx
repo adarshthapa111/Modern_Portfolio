@@ -2,11 +2,11 @@ import React from "react";
 
 const GetInTouch = () => {
   return (
-    <div>
-      <section className="section-4 p-4 max-w-6xl mx-auto">
-        <div className="w-full shadow-md shadow-gray-500 px-4 rounded-md py-8 text-center">
+    <div className="bg-gray-100 py-16">
+      <section className="section-4  p-4 max-w-6xl mx-auto">
+        <div className=" bg-white w-full shadow-md shadow-gray-500 px-4 rounded-md py-8 text-center">
           <h5 className="text-red-500 font-bold">Get in touch</h5>
-          <h2 className="text-xl font-playfair font-bold py-6  md:text-2xl lg:text-3xl xl:text-4xl">
+          <h2 className="text-xl font-bold py-6  md:text-2xl lg:text-3xl xl:text-4xl">
             Have a project in your mind
           </h2>
           <button

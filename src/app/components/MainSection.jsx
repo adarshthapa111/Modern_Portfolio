@@ -80,7 +80,6 @@ const MainSection = () => {
                 </h1>
                 <h2 className="text-5xl  text-white sm:text-6xl md:text-7xl font-extrabold leading-none ">
                   <span className="text-gray-800">Adarsh Thapa</span>{" "}
-                  
                 </h2>
                 <p className="text-gray-700 text-xl max-w-md">
                   Working as a Frontend Dev for 6 months

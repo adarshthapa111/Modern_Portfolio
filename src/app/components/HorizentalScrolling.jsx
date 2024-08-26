@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function HorizentalScrolling() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 max-w-7xl mx-auto">
-      <h1 className="text-xl md:text-4xl p-6 font-semibold font-playfair">
+      <h1 className="text-xl md:text-4xl p-6 font-semibold">
         <span className="text-red-500"> Go-To</span> Tools
       </h1>
       <div className="container grid gap-6 px-4 md:px-6 lg:grid-cols-3 xl:grid-cols-4">
