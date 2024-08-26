@@ -10,7 +10,7 @@ import { Link as ScrollLink } from "react-scroll";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Socialicons from "./components/Socialicons";
-import ProjectShowcase from "./components/ProjectShowcase"
+import ProjectShowcase from "./components/ProjectShowcase";
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const tools = [
@@ -75,7 +75,7 @@ export default function Home() {
                 className="mt-8 bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 transition duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Let's chat
+                Let&apos;s chat
               </button>
             </div>
           )}
@@ -108,9 +108,7 @@ export default function Home() {
                 <div className="flex flex-wrap gap-8 pt-8">
                   <div className="bg-gray-100 p-4 rounded-lg shadow-md border text-center">
                     <h2 className="text-4xl font-bold text-black">6+</h2>
-                    <p className="text-gray-600 text-sm mt-2">
-                      Experience
-                    </p>
+                    <p className="text-gray-600 text-sm mt-2">Experience</p>
                   </div>
                   <div className="bg-gray-100 p-4 rounded-lg shadow-md border">
                     <h2 className="text-4xl font-bold text-black text-center">
