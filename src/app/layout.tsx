@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         alt: "Adarsh Thapa Portfolio Image",
       },
     ],
-    site_name: "Adarsh Thapa Portfolio",
+    siteName: "Adarsh Thapa Portfolio",
   },
   twitter: {
     card: "summary_large_image",
