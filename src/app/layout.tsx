@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     url: "https://adarshthapa.vercel.app/",
     images: [
       {
-        url: "/favicon.png",
+        url: "/img/bg.png",
         width: 800,
         height: 600,
         alt: "Adarsh Thapa Portfolio Image",
@@ -28,9 +28,10 @@ export const metadata: Metadata = {
     title: "Adarsh Thapa - Frontend Developer Portfolio",
     description:
       "Explore the portfolio of Adarsh Thapa, showcasing projects and skills in frontend development using React and Next.js.",
-      images: [ // Use 'images' instead of 'image'
+    images: [
+      // Use 'images' instead of 'image'
       {
-        url: "/favicon.png", // Use a relevant image for Twitter
+        url: "/img/bg.png", // Use a relevant image for Twitter
         width: 800,
         height: 600,
         alt: "Adarsh Thapa Portfolio Image",
