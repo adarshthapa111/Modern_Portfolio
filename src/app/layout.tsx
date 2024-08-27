@@ -5,8 +5,31 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Adarsh Thapa",
-  description: "Hello I am Adarsh Thapa.",
+  title: "Adarsh Thapa - Frontend Developer Portfolio",
+  description:
+    "Explore the portfolio of Adarsh Thapa, showcasing projects and skills in frontend development using React and Next.js.",
+  openGraph: {
+    title: "Adarsh Thapa - Frontend Developer Portfolio",
+    description:
+      "Explore the portfolio of Adarsh Thapa, showcasing projects and skills in frontend development using React and Next.js.",
+    url: "https://adarshthapa.vercel.app/",
+    images: [
+      {
+        url: "/favicon.png",
+        width: 800,
+        height: 600,
+        alt: "Adarsh Thapa Portfolio Image",
+      },
+    ],
+    site_name: "Adarsh Thapa Portfolio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Adarsh Thapa - Frontend Developer Portfolio",
+    description:
+      "Explore the portfolio of Adarsh Thapa, showcasing projects and skills in frontend development using React and Next.js.",
+    image: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
@@ -16,10 +39,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <link rel="icon" href="/favicon.png" /> {/* Replace with favicon.png if needed */}
-      <body className={inter.className}>
-        {children}
-        </body>
+      <link rel="icon" href="/favicon.png" />{" "}
+      {/* Replace with favicon.png if needed */}
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
