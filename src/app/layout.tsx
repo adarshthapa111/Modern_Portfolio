@@ -51,7 +51,7 @@ export const metadata: Metadata = {
       {
         url: "https://adarshthapa.vercel.app/img/bg.png",
         width: 800,
-        height: 600,
+        height: 1000,
         alt: "Adarsh Thapa Portfolio Image",
       },
     ],
