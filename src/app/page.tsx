@@ -2,7 +2,6 @@
 import Image from "next/image";
 import About from "../app/AboutPage/page";
 import Projects from "./components/Projects";
-import Skills from "./components/Skills";
 import GetInTouch from "./components/GetInTouch";
 import Tools from "./components/Tools";
 import Link from "next/link";
@@ -16,7 +15,7 @@ export default function Home() {
       <>
         <MainSection />
       </>
-      <div>
+      <>
         <section id="tools">
           <Tools />
         </section>
@@ -25,16 +24,11 @@ export default function Home() {
         </section>
         <section id="projects">
           <Projects />
-          {/* <ProjectShowcase/> */}
         </section>
-        {/* <section id="skills">
-          <Skills />
-        </section> */}
         <section id="getintouch">
           <GetInTouch />
         </section>
-      </div>
-
+      </>
       <>
         <Footer />
       </>
